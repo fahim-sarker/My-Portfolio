@@ -1,0 +1,105 @@
+#work{
+    padding-bottom: 150px;
+}
+.work_head{
+    position: relative;
+}
+.work_head h2 {
+    font-size: 110px;
+    letter-spacing: 10px;
+    line-height: 0.7;
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: Poppins;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.07);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.work_head h3 {
+    padding: 105px 0 100px 0;
+    font-size: 56px;
+    font-weight: 900 !important;
+    color: #fff !important;
+    text-transform: uppercase;
+    margin: 0;
+    display: inline-block;
+    padding-right: 10px;
+    font-family: Poppins;
+}
+.work_head h4 {
+    display: inline-block;
+    font-size: 56px;
+    font-weight: 900 !important;
+    color: skyblue !important;
+    text-transform: uppercase;
+    margin: 0;
+    font-family: Poppins;
+}
+.list11{
+    justify-content: center;
+    padding-bottom: 10px !important;
+    gap: 10px;
+}
+.nav-link{
+    color: #fff !important;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #fff !important;
+    color: var(--bs-nav-tabs-link-active-color);
+    background-color: var(--bs-nav-tabs-link-active-bg);
+    border-color: var(--bs-nav-tabs-link-active-border-color);
+    background-color: skyblue !important;
+    border: none !important;
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    border: 1px solid skyblue !important;
+}
+.review{
+    margin-top: 100px !important;
+}
+.review-head h2{
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: Poppins;
+    font-weight: 800;
+    padding-bottom: 100px
+}
+
+@media (max-width: 1199px){
+    .work_head h2 {
+        font-size: 68px;
+        letter-spacing: 2px;
+        top: 50px;
+    }
+    .work_head h3 {
+        padding: 54px 0 50px 0;
+        font-size: 32px;
+        padding-right: 10px;
+    }
+    .work_head h4 {
+        padding: 0px 0 50px 0;
+        font-size: 32px;
+        padding-right: 10px;
+    }
+    .review-head h2 {
+        padding-bottom: 40px;
+    }
+    .review {
+        margin-top: 50px !important;
+    }
+    #work {
+        padding-bottom: 0px;
+    }
+}
