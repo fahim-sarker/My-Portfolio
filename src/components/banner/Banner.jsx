@@ -8,7 +8,7 @@ const Banner = () => {
         <section id="banner">
             <Container>
                 <Row className='justify-content-end'>
-                    <Col lg={5}>
+                    <Col lg={6}>
                         <div class="ban-text">
                         <h1>I'M Fahim Sarker</h1>
                             <TypeAnimation
