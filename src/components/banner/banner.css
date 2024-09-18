@@ -50,7 +50,7 @@
     padding: 15px 45px;
     margin-left: 20px;
     border: 2px solid skyblue;
-    border-radius: 35px;
+    border-radius: 10px;
     background: linear-gradient(to left, skyblue 50%, #f111 50%);
     background-size: 200% 100%;
     transition: 0.6s;
@@ -58,6 +58,10 @@
     -moz-transition: 0.6s;
     -ms-transition: 0.6s;
     -o-transition: 0.6s;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 .ban-text button:hover{
     background-position: right;
