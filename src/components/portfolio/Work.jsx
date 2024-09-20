@@ -15,6 +15,7 @@ import RazibSir from "../../assets/Razibsir.jpeg"
 import Orebi from "../../assets/orebi.png"
 import Hekto from "../../assets/hekto.png"
 import NewsPro from "../../assets/newspro.png"
+import Project2 from "../../assets/proj2.png"
 
 const Work = () => {
   var settings = {
@@ -50,17 +51,17 @@ const Work = () => {
             </Tab>
             <Tab eventKey="business" title="Business">
               <Row>
-                <Workreusable image={Port1} title="Finsweet Multipage" content="Finsweet Agency's website contains 12 pages built with Bootstrap. Responsive designed to work smoothly on different devices I" github="https://github.com/fahim-sarker" livesite="https://aquamarine-bublanina-e9df9d.netlify.app/" />
-                <Workreusable image={Port9} title="Academic Site" content="had the privilege of developing a fully responsive and user-friendly website for our school." github="https://github.com/fahim-sarker/M.A.H.S" livesite="https://mathabhangaadarshahighschool.netlify.app/" />
-                <Workreusable image={Agency} title="BWFC Agency" content="BWFC is a stylish agency website built with React and Bootstrap. It features clean design and comprehensive service details I" github="https://github.com/SIRsahed/Petro-Oil-Tailwind" livesite="https://cerulean-seahorse-3730b2.netlify.app/" />
+                <Workreusable image={Port1} title="Finsweet Multipage" content="Finsweet Agency's website contains 12 pages built with Bootstrap. Responsive designed to work smoothly on different devices I" github="https://github.com/fahim-sarker" livesite="https://fahim-sarker.github.io/multipage/" />
+                <Workreusable image={Project2} title="Travel agency" content="Nepal website contains 12 pages built with Bootstrap. Responsive designed to work smoothly on different devices I" github="https://github.com/fahim-sarker/Agency" livesite="https://fahim-sarker.github.io/Agency/" />
+                <Workreusable image={Agency} title="BWFC Agency" content="BWFC is a stylish agency website built with React and Bootstrap. It features clean design and comprehensive service details I" github="https://github.com/fahim-sarker/react-figma" livesite="https://cerulean-seahorse-3730b2.netlify.app/" />
 
               </Row>
             </Tab>
             <Tab eventKey="newspaper" title="Newspaper">
               <Row>
               <Workreusable image={Port1} title="Finsweet Multipage" content="Finsweet Agency's website contains 12 pages built with Bootstrap. Responsive designed to work smoothly on different devices I" github="https://github.com/fahim-sarker" livesite="https://aquamarine-bublanina-e9df9d.netlify.app/" />
-              <Workreusable image={Port9} title="Academic Site" content="had the privilege of developing a fully responsive and user-friendly website for our school." github="https://github.com/fahim-sarker/M.A.H.S" livesite="https://mathabhangaadarshahighschool.netlify.app/" />
-              <Workreusable image={Agency} title="BWFC Agency" content="BWFC is a stylish agency website built with React and Bootstrap. It features clean design and comprehensive service details I" github="https://github.com/SIRsahed/Petro-Oil-Tailwind" livesite="https://cerulean-seahorse-3730b2.netlify.app/" />
+              <Workreusable image={NewsPro} title="Newspaper" content="Newspro Agency website contains 12 pages built with Bootstrap. Responsive designed to work smoothly on different devices I" github="https://github.com/fahim-sarker/Newspaper" livesite="https://fahim-sarker.github.io/Newspaper/" />
+              <Workreusable image={Agency} title="BWFC Agency" content="BWFC is a stylish agency website built with React and Bootstrap. It features clean design and comprehensive service details I" github="https://github.com/fahim-sarker/react-figma" livesite="https://cerulean-seahorse-3730b2.netlify.app/" />
               </Row>
             </Tab>
             <Tab eventKey="portfolio" title="Portfolio">
