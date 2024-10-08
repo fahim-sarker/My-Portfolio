@@ -4,7 +4,7 @@ import "./about_me.css";
 import { RiHomeOfficeLine } from "react-icons/ri";
 import { FaGraduationCap, FaPenRuler, FaBullhorn } from "react-icons/fa6";
 import { CircularProgressbarWithChildren } from "react-circular-progressbar";
-import CV from "../../assets/Fahim[1].pdf";
+import CV from "../../assets/Fahim Sarker cv.pdf";
 
 const About_me = () => {
   return (
