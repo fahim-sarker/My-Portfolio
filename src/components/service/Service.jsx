@@ -2,7 +2,7 @@ import React from "react";
 import "./service.css";
 import { Col, Container, Row } from "react-bootstrap";
 import Servicereusable from "../servicereusable/Servicereusable";
-import EmailSig from "../../assets/email signature.png";
+import EmailSig from "../../assets/figma.png";
 import WebDgn from "../../assets/web design.png";
 import WebDev from "../../assets/web development.png";
 
@@ -21,8 +21,9 @@ const Service = () => {
           <Row>
             <Servicereusable
               sampleimg={EmailSig}
-              title="Email Signature"
-              para="Transform your digital presence with our tailored email signature service. It's not just contact info—it's a potent branding tool. Stand out, leaving a lasting impression on clients and colleagues with our expertly crafted signatures."
+              title="Figma to HTML"
+              para="If you have a design in Figma, Adobe XD, PSD, or AI, I can transform it into a fully responsive, high-quality Responsive Design
+              Cross-Browser Compatibility HTML website that maintains the integrity of your original vision and Pixel-Perfect Conversion."
             />
 
             <Servicereusable
