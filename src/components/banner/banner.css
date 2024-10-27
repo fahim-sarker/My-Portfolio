@@ -1,6 +1,6 @@
 #banner{
     padding: 150px 0 150px 0;
-    background: url(../../assets/bannner.jpg) no-repeat center / cover;
+    background: url(../../assets/fahim2.jpg) no-repeat center / cover;
     margin-bottom: 50px;
 }
 .ban-img{
@@ -12,18 +12,18 @@
     font-weight: 700;
     margin: 18px 0 10px;
     position: relative;
-    padding-left: 70px;
+    padding-left: 20px;
     color: #fff;
 }
 .ban-text h1::after{
     content: "";
     position: absolute;
     top: 50%;
-    left: -1px;
+    left: 0;
     height: 4px;
-    width: 50px;
+    width: 20px;
     border-radius: 4px;
-    background: skyblue;
+    background: rgb(44, 44, 91);
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);

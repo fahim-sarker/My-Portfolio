@@ -29,8 +29,8 @@ const Banner = () => {
                   fontSize: "32px",
                   display: "inline-block",
                   fontWeight: "600",
-                  color: "white",
-                  paddingLeft: "70px",
+                  color: "antiquewhite",
+                  paddingLeft: "20px",
                 }}
                 repeat={Infinity}
               />

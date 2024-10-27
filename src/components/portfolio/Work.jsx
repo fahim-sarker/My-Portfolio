@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./work.css";
 import Port1 from "../../assets/port1.png";
+import Quiz1 from "../../assets/quiz.png";
 import Port3 from "../../assets/steadfast.png";
 import Agency from "../../assets/agency.png";
 import Port9 from "../../assets/education.png";
@@ -92,6 +93,31 @@ const Work = () => {
                 />
               </Row>
             </Tab>
+            <Tab eventKey="education" title="Education">
+              <Row>
+                <Workreusable
+                  image={Port9}
+                  title="Academic Site"
+                  content="had the privilege of developing a fully responsive and user-friendly website for our school."
+                  github="https://github.com/fahim-sarker/M.A.H.S"
+                  livesite="https://mathabhangaadarshahighschool.netlify.app/"
+                />
+                <Workreusable
+                  image={Quiz1}
+                  title="Quiz Applicaton"
+                  content="This project is an Interactive Quiz-Application building using HTML, CSS, and JavaScript  knowledge."
+                  github="https://github.com/fahim-sarker/Quiz-Application"
+                  livesite="https://dancing-semifreddo-982a32.netlify.app/"
+                />
+                <Workreusable
+                  image={Agency}
+                  title="BWFC Agency"
+                  content="BWFC is a stylish agency website built with React and Bootstrap. It features clean design and comprehensive service details I"
+                  github="https://github.com/fahim-sarker"
+                  livesite="https://cerulean-seahorse-3730b2.netlify.app/"
+                />
+              </Row>
+            </Tab>
             <Tab eventKey="newspaper" title="Newspaper">
               <Row>
                 <Workreusable
@@ -132,31 +158,6 @@ const Work = () => {
                   content="had the privilege of developing a fully responsive and user-friendly website for our school."
                   github="https://github.com/fahim-sarker/M.A.H.S"
                   livesite="https://mathabhangaadarshahighschool.netlify.app/"
-                />
-                <Workreusable
-                  image={Agency}
-                  title="BWFC Agency"
-                  content="BWFC is a stylish agency website built with React and Bootstrap. It features clean design and comprehensive service details I"
-                  github="https://github.com/fahim-sarker"
-                  livesite="https://cerulean-seahorse-3730b2.netlify.app/"
-                />
-              </Row>
-            </Tab>
-            <Tab eventKey="education" title="Education">
-              <Row>
-                <Workreusable
-                  image={Port9}
-                  title="Academic Site"
-                  content="had the privilege of developing a fully responsive and user-friendly website for our school."
-                  github="https://github.com/fahim-sarker/M.A.H.S"
-                  livesite="https://mathabhangaadarshahighschool.netlify.app/"
-                />
-                <Workreusable
-                  image={Port1}
-                  title="Finsweet Multipage"
-                  content="Finsweet Agency's website contains 12 pages built with Bootstrap. Responsive designed to work smoothly on different devices I"
-                  github="https://github.com/fahim-sarker"
-                  livesite="https://aquamarine-bublanina-e9df9d.netlify.app/"
                 />
                 <Workreusable
                   image={Agency}
