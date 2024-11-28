@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./work.css";
 import Port1 from "../../assets/port1.png";
-import Quiz1 from "../../assets/quiz.png";
+import Quiz1 from "../../assets/js3.png";
 import Port3 from "../../assets/steadfast.png";
 import Agency from "../../assets/agency.png";
 import Port9 from "../../assets/education.png";
@@ -14,11 +14,14 @@ import Slider from "react-slick";
 import Reviewreusable from "../reviewreusable/Reviewreusable";
 import RazibSir from "../../assets/Razibsir.jpeg";
 import Orebi from "../../assets/orebi.png";
-import Hekto from "../../assets/hekto.png";
+import Hekto from "../../assets/hekton.png";
 import NewsPro from "../../assets/newspro.png";
 import Project2 from "../../assets/agenci.png";
-import Project3 from "../../assets/java.png";
-import Project4 from "../../assets/java1.png";
+import Project3 from "../../assets/js1.png";
+import Project4 from "../../assets/js2.png";
+import Flip from "../../assets/flip.png"
+import Soft from "../../assets/softnio.png"
+import Todo from "../../assets/todo.png"
 
 const Work = () => {
   var settings = {
@@ -48,7 +51,7 @@ const Work = () => {
               <Row>
                 <Workreusable
                   image={Orebi}
-                  title="Orebi Multipage"
+                  title="Orebi Ecommerce"
                   content="Orebi is a fully functional e-commerce site with a user-friendly interface and product management, built with modern technologies."
                   github="https://github.com/fahim-sarker/E-COMMERECE"
                   livesite="https://fs-ecommerce.netlify.app/"
@@ -56,17 +59,17 @@ const Work = () => {
 
                 <Workreusable
                   image={Hekto}
-                  title="Hekto Multipage"
-                  content="Orebi is a fully functional e-commerce site with a user-friendly interface and product management, built with modern technologies."
+                  title="Hekto Ecommerce"
+                  content="Hekto is a fully functional e-commerce site with a user-friendly interface and product management, built with modern technologies."
                   github="https://github.com/fahim-sarker/hekto"
                   livesite="https://lucky-peony-d1ab04.netlify.app/"
                 />
                 <Workreusable
-                  image={Port3}
-                  title="Courier service"
-                  content=" had the privilege of developing a fully responsive and user-friendly website for our school."
-                  github="https://github.com/fahim-sarker/React-Task"
-                  livesite="https://steadfast-react-task.netlify.app/"
+                  image={Flip}
+                  title="FlipKart Ecommerce"
+                  content="FlipKart is a fully functional e-commerce site with a user-friendly interface and product management, built with modern technologies."
+                  github="https://github.com/fahim-sarker/cap-ecommerce"
+                  livesite="https://incredible-malasada-81f780.netlify.app/"
                 />
               </Row>
             </Tab>
@@ -75,7 +78,7 @@ const Work = () => {
                 <Workreusable
                   image={Quiz1}
                   title="Quiz Applicaton"
-                  content="This project is an Interactive Quiz-Application building using HTML, CSS, and JavaScript  knowledge."
+                  content="This project is an Interactive Quiz-Application and showing final result building using HTML, CSS, and JavaScript  knowledge."
                   github="https://github.com/fahim-sarker/Quiz-Application"
                   livesite="https://dancing-semifreddo-982a32.netlify.app/"
                 />
@@ -87,6 +90,13 @@ const Work = () => {
                   github="https://github.com/fahim-sarker/Weather-Application"
                   livesite="https://papaya-sunflower-a01a29.netlify.app/"
                 />
+                  <Workreusable
+                    image={Todo}
+                    title="JavaScript To-Do List"
+                    content="I built a dynamic and interactive to-do list application using vanilla JavaScript, focusing on providing a simple yet efficient way to manage daily tasks"
+                    github="https://github.com/fahim-sarker/Javascript-To-do"
+                    livesite="https://fascinating-nougat-b22f65.netlify.app/"
+                  />
                 <Workreusable
                   image={Project4}
                   title="Food Order Section"
@@ -102,7 +112,7 @@ const Work = () => {
               <Workreusable
                   image={Orebi}
                   title="Orebi Multipage"
-                  content="Orebi is a fully functional e-commerce site with a user-friendly interface and product management, built with modern technologies."
+                  content="Orebi is a fully functional e-commerce site with a user-friendly interface built with modern technologies."
                   github="https://github.com/fahim-sarker/E-COMMERECE"
                   livesite="https://fs-ecommerce.netlify.app/"
                 />
@@ -116,9 +126,31 @@ const Work = () => {
                  <Workreusable
                   image={Port3}
                   title="Courier service"
-                  content=" had the privilege of developing a fully responsive and user-friendly website for our school."
+                  content="Steadfast is user-friendly website for a courier service business, with an easy way to send and track packages."
                   github="https://github.com/fahim-sarker/React-Task"
                   livesite="https://steadfast-react-task.netlify.app/"
+                />
+                 <Workreusable
+                  image={Soft}
+                  title="Restaurant Website"
+                  content="I designed and developed a 
+                  for a restaurant, providing a seamless online experience for customers to explore the menu, place orders."
+                  github="https://github.com/fahim-sarker/Softnion-Task"
+                  livesite="https://softnion.netlify.app/"
+                />
+                  <Workreusable
+                  image={Hekto}
+                  title="Hekto Ecommerce"
+                  content="Hekto is a fully functional e-commerce site with a user-friendly interface and product management, built with modern technologies."
+                  github="https://github.com/fahim-sarker/hekto"
+                  livesite="https://lucky-peony-d1ab04.netlify.app/"
+                />
+                <Workreusable
+                  image={Flip}
+                  title="FlipKart Ecommerce"
+                  content="FlipKart is a fully functional e-commerce site with a user-friendly interface and product management, built with modern technologies."
+                  github="https://github.com/fahim-sarker/cap-ecommerce"
+                  livesite="https://incredible-malasada-81f780.netlify.app/"
                 />
               </Row>
             </Tab>
@@ -134,7 +166,7 @@ const Work = () => {
                  <Workreusable
                   image={Port9}
                   title="Academic Site"
-                  content="had the privilege of developing a fully responsive and user-friendly website for our school."
+                  content="I developed a comprehensive, user-friendly website for a school, designed to improve communication for students, parents, and staff."
                   github="https://github.com/fahim-sarker/M.A.H.S"
                   livesite="https://mathabhangaadarshahighschool.netlify.app/"
                 />
@@ -177,7 +209,7 @@ const Work = () => {
                 <Workreusable
                   image={Port9}
                   title="Academic Site"
-                  content="had the privilege of developing a fully responsive and user-friendly website for our school."
+                  content="I developed a comprehensive, user-friendly website for a school, designed to improve communication for students, parents, and staff"
                   github="https://github.com/fahim-sarker/M.A.H.S"
                   livesite="https://mathabhangaadarshahighschool.netlify.app/"
                 />
