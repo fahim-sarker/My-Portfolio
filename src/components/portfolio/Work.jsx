@@ -93,7 +93,7 @@ const Work = () => {
                   <Workreusable
                     image={Todo}
                     title="JavaScript To-Do List"
-                    content="I built a dynamic and interactive to-do list application using vanilla JavaScript, focusing on providing a simple yet efficient way to manage daily tasks"
+                    content="I built a dynamic and interactive to-do list application using vanilla JavaScript, focusing on providing  way to manage daily tasks"
                     github="https://github.com/fahim-sarker/Javascript-To-do"
                     livesite="https://fascinating-nougat-b22f65.netlify.app/"
                   />
