@@ -165,10 +165,10 @@ const Work = () => {
                 />
                  <Workreusable
                   image={Port9}
-                  title="Academic Site"
-                  content="I developed a comprehensive, user-friendly website for a school, designed to improve communication for students, parents, and staff."
-                  github="https://github.com/fahim-sarker/M.A.H.S"
-                  livesite="https://mathabhangaadarshahighschool.netlify.app/"
+                  title="Educational Site"
+                  content="I developed a comprehensive, user-friendly website for a Education, designed to improve communication for students, parents, and staff."
+                  github="https://github.com/fahim-sarker/cap-education"
+                  livesite="https://capeducation.netlify.app/"
                 />
                 <Workreusable
                   image={Agency}
@@ -208,10 +208,10 @@ const Work = () => {
               <Row>
                 <Workreusable
                   image={Port9}
-                  title="Academic Site"
-                  content="I developed a comprehensive, user-friendly website for a school, designed to improve communication for students, parents, and staff"
-                  github="https://github.com/fahim-sarker/M.A.H.S"
-                  livesite="https://mathabhangaadarshahighschool.netlify.app/"
+                  title="Educational Site"
+                  content="I developed a comprehensive, user-friendly website for a Education, designed to improve communication for students, parents, and staff"
+                  github="https://github.com/fahim-sarker/cap-education"
+                  livesite="https://capeducation.netlify.app/"
                 />
                 <Workreusable
                   image={Port1}
