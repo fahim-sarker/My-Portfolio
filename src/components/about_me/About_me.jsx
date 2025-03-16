@@ -5,8 +5,25 @@ import { RiHomeOfficeLine } from "react-icons/ri";
 import { FaGraduationCap, FaPenRuler, FaBullhorn } from "react-icons/fa6";
 import { CircularProgressbarWithChildren } from "react-circular-progressbar";
 import CV from "../../assets/cv.pdf";
+import CountUp from "react-countup";
 
 const About_me = () => {
+  const stats = [
+    { value: 1, label: "Years of Experience" },
+    { value: 5, label: "Happy Customers" },
+    { value: 15, label: "Projects Done" },
+    { value: 3, label: "Awards Won" },
+  ];
+  const skills = [
+    { name: "HTML", value: 85 },
+    { name: "CSS", value: 80 },
+    { name: "JavaScript", value: 65 },
+    { name: "Bootstrap", value: 90 },
+    { name: "Tailwind CSS", value: 90 },
+    { name: "React JS", value: 80 },
+    { name: "Next JS", value: 70 },
+    { name: "GitHub", value: 85 },
+  ];
   return (
     <section id="about">
       <Container>
@@ -82,26 +99,16 @@ const About_me = () => {
           </Col>
           <Col lg={6}>
             <Row>
-              <Col lg={6}>
-                <div class="about-right">
-                  <h2>1+</h2>
-                  <h3>Years of Experience</h3>
-                </div>
-                <div class="about-right">
-                  <h2>5+</h2>
-                  <h3>Happy Customers</h3>
-                </div>
-              </Col>
-              <Col lg={6}>
-                <div class="about-right">
-                  <h2>15+</h2>
-                  <h3>Projects Done</h3>
-                </div>
-                <div class="about-right">
-                  <h2>3+</h2>
-                  <h3>Awards Won</h3>
-                </div>
-              </Col>
+              {stats.map((stat, index) => (
+                <Col lg={6} key={index}>
+                  <div className="about-right">
+                    <h2>
+                      <CountUp end={stat.value} duration={3} />+
+                    </h2>
+                    <h3>{stat.label}</h3>
+                  </div>
+                </Col>
+              ))}
             </Row>
           </Col>
         </Row>
