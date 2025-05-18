@@ -1,10 +1,9 @@
-import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./about_me.css";
 import { RiHomeOfficeLine } from "react-icons/ri";
 import { FaGraduationCap, FaPenRuler, FaBullhorn } from "react-icons/fa6";
 import { CircularProgressbarWithChildren } from "react-circular-progressbar";
-import CV from "../../assets/cv.pdf";
+import CV from "../../assets/Fahim-Sarker-Resume.pdf";
 import CountUp from "react-countup";
 
 const About_me = () => {

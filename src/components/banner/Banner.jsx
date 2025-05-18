@@ -1,4 +1,3 @@
-import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import "./banner.css";
 import { TypeAnimation } from "react-type-animation";
@@ -9,7 +8,7 @@ const Banner = () => {
       <Container>
         <Row className="justify-content-start">
           <Col lg={6}>
-            <div class="ban-text">
+            <div className="ban-text">
               <h1>I'M Fahim Sarker</h1>
               <TypeAnimation
                 sequence={[

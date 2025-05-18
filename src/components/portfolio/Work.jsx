@@ -1,5 +1,4 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import "./work.css";
 import Port1 from "../../assets/port1.png";
 import Quiz1 from "../../assets/js3.png";
@@ -48,6 +47,32 @@ const Work = () => {
         <Row className="text-center flex">
           <Tabs defaultActiveKey="ecommerce" className="mb-4 list11">
             <Tab eventKey="ecommerce" title="E-Commerce">
+              <Row>
+                <Workreusable
+                  image={Orebi}
+                  title="Orebi Ecommerce"
+                  content="Orebi is a fully functional e-commerce site with a user-friendly interface and product management, built with modern technologies."
+                  github="https://github.com/fahim-sarker/E-COMMERECE"
+                  livesite="https://fs-ecommerce.netlify.app/"
+                />
+
+                <Workreusable
+                  image={Hekto}
+                  title="Hekto Ecommerce"
+                  content="Hekto is a fully functional e-commerce site with a user-friendly interface and product management, built with modern technologies."
+                  github="https://github.com/fahim-sarker/hekto"
+                  livesite="https://lucky-peony-d1ab04.netlify.app/"
+                />
+                <Workreusable
+                  image={Flip}
+                  title="FlipKart Ecommerce"
+                  content="FlipKart is a fully functional e-commerce site with a user-friendly interface and product management, built with modern technologies."
+                  github="https://github.com/fahim-sarker/cap-ecommerce"
+                  livesite="https://incredible-malasada-81f780.netlify.app/"
+                />
+              </Row>
+            </Tab>
+            <Tab eventKey="TypeScript" title="TypeScript">
               <Row>
                 <Workreusable
                   image={Orebi}
