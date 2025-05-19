@@ -117,11 +117,11 @@ const Work = () => {
                   livesite="https://viridianbray-client.netlify.app"
                 />
                 <Workreusable
-                  image={Flip}
-                  title="FlipKart Ecommerce"
-                  content="FlipKart is a fully functional e-commerce site with a user-friendly interface and product management, built with modern technologies."
-                  github="https://github.com/fahim-sarker/cap-ecommerce"
-                  livesite="https://incredible-malasada-81f780.netlify.app/"
+                  image={Port2}
+                  title="Fitness Gym"
+                  content="This is a modern, responsive website designed for a fitness gym. The project showcases my frontend development skills with a clean UI."
+                  github="https://github.com/fahim-sarker/My-Projecct"
+                  livesite="https://galaxy-gym.netlify.app/"
                 />
               </Row>
             </Tab>
