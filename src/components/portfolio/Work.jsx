@@ -1,9 +1,10 @@
 import { Container, Row } from "react-bootstrap";
 import "./work.css";
 import Port1 from "../../assets/port1.png";
+import Port2 from "../../assets/gym1.png";
 import Quiz1 from "../../assets/js3.png";
-import Port3 from "../../assets/steadfast.png";
-import Agency from "../../assets/agency.png";
+import Port3 from "../../assets/car.png";
+import Bar from "../../assets/bar.png";
 import Port9 from "../../assets/education.png";
 import { Tabs, Tab } from "react-bootstrap";
 import Workreusable from "../workreusable/Workreusable";
@@ -12,10 +13,11 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Reviewreusable from "../reviewreusable/Reviewreusable";
 import RazibSir from "../../assets/Razibsir.jpeg";
+import Orebi1 from "../../assets/filecheck.png";
 import Orebi from "../../assets/orebi.png";
 import Hekto from "../../assets/hekton.png";
-import NewsPro from "../../assets/newspro.png";
-import Project2 from "../../assets/agenci.png";
+import Viridian from "../../assets/viridian.png";
+import Project2 from "../../assets/reminder.png";
 import Project3 from "../../assets/js1.png";
 import Project4 from "../../assets/js2.png";
 import Flip from "../../assets/flip.png"
@@ -75,26 +77,26 @@ const Work = () => {
             <Tab eventKey="TypeScript" title="TypeScript">
               <Row>
                 <Workreusable
-                  image={Orebi}
-                  title="Orebi Ecommerce"
-                  content="Orebi is a fully functional e-commerce site with a user-friendly interface and product management, built with modern technologies."
-                  github="https://github.com/fahim-sarker/E-COMMERECE"
-                  livesite="https://fs-ecommerce.netlify.app/"
+                  image={Orebi1}
+                  title=" Fraud File Checker Website"
+                  content="This website is designed to help users upload and scan files to detect potential fraud, malware, or malicious content."
+                  github="https://github.com/fahim-sarker/Xeltra"
+                  livesite="https://xeltra.netlify.app/"
                 />
 
                 <Workreusable
-                  image={Hekto}
-                  title="Hekto Ecommerce"
-                  content="Hekto is a fully functional e-commerce site with a user-friendly interface and product management, built with modern technologies."
-                  github="https://github.com/fahim-sarker/hekto"
-                  livesite="https://lucky-peony-d1ab04.netlify.app/"
+                  image={Viridian}
+                  title="Business Task Management"
+                  content="This project is a full-featured task management web application built for teams and businesses to organize, track, and manage tasks efficiently."
+                  github="https://github.com/fahim-sarker/Viridian"
+                  livesite="https://viridianbray-client.netlify.app"
                 />
                 <Workreusable
-                  image={Flip}
-                  title="FlipKart Ecommerce"
-                  content="FlipKart is a fully functional e-commerce site with a user-friendly interface and product management, built with modern technologies."
-                  github="https://github.com/fahim-sarker/cap-ecommerce"
-                  livesite="https://incredible-malasada-81f780.netlify.app/"
+                  image={Port2}
+                  title="Fitness Gym"
+                  content="This is a modern, responsive website designed for a fitness gym. The project showcases my frontend development skills with a clean UI."
+                  github="https://github.com/fahim-sarker/My-Projecct"
+                  livesite="https://galaxy-gym.netlify.app/"
                 />
               </Row>
             </Tab>
@@ -115,80 +117,50 @@ const Work = () => {
                   github="https://github.com/fahim-sarker/Weather-Application"
                   livesite="https://papaya-sunflower-a01a29.netlify.app/"
                 />
-                  <Workreusable
-                    image={Todo}
-                    title="JavaScript To-Do List"
-                    content="I built a dynamic and interactive to-do list application using vanilla JavaScript, focusing on providing  way to manage daily tasks"
-                    github="https://github.com/fahim-sarker/Javascript-To-do"
-                    livesite="https://fascinating-nougat-b22f65.netlify.app/"
-                  />
                 <Workreusable
-                  image={Project4}
-                  title="Food Order Section"
-                  content="A food item section with Add to Cart for each item.
-                  A dynamic sidebar displaying added items to adjust quantities and remove items."
-                  github="https://github.com/fahim-sarker/Bangla-Puzzle"
-                  livesite="https://banglapuzzleltd.netlify.app/"
+                  image={Todo}
+                  title="JavaScript To-Do List"
+                  content="I built a dynamic and interactive to-do list application using vanilla JavaScript, focusing on providing  way to manage daily tasks"
+                  github="https://github.com/fahim-sarker/Javascript-To-do"
+                  livesite="https://fascinating-nougat-b22f65.netlify.app/"
                 />
               </Row>
             </Tab>
             <Tab eventKey="education" title="React Js">
               <Row>
-              <Workreusable
-                  image={Orebi}
-                  title="Orebi Multipage"
-                  content="Orebi is a fully functional e-commerce site with a user-friendly interface built with modern technologies."
-                  github="https://github.com/fahim-sarker/E-COMMERECE"
-                  livesite="https://fs-ecommerce.netlify.app/"
-                />
-                 <Workreusable
-                  image={Project2}
-                  title="Agency Website"
-                  content="Agency website contains 10 pages built with React.Responsive designed to work smoothly on different devices I"
-                  github="https://github.com/fahim-sarker/Cap-project"
-                  livesite="https://careeradvanceprograming.netlify.app/"
-                 />
-                 <Workreusable
-                  image={Port3}
-                  title="Courier service"
-                  content="Steadfast is user-friendly website for a courier service business, with an easy way to send and track packages."
-                  github="https://github.com/fahim-sarker/React-Task"
-                  livesite="https://steadfast-react-task.netlify.app/"
-                />
-                 <Workreusable
-                  image={Soft}
-                  title="Restaurant Website"
-                  content="I designed and developed a 
-                  for a restaurant, providing a seamless online experience for customers to explore the menu, place orders."
-                  github="https://github.com/fahim-sarker/Softnion-Task"
-                  livesite="https://softnion.netlify.app/"
-                />
-                  <Workreusable
-                  image={Hekto}
-                  title="Hekto Ecommerce"
-                  content="Hekto is a fully functional e-commerce site with a user-friendly interface and product management, built with modern technologies."
-                  github="https://github.com/fahim-sarker/hekto"
-                  livesite="https://lucky-peony-d1ab04.netlify.app/"
+                <Workreusable
+                  image={Bar}
+                  title="Multi-Vendor Bar"
+                  content="The site features a dedicated multi-vendor bar that allows users to easily filter and browse products by vendor."
+                  github="https://github.com/fahim-sarker/alex420"
+                  livesite="https://shipawayy.netlify.app/"
                 />
                 <Workreusable
-                  image={Flip}
-                  title="FlipKart Ecommerce"
-                  content="FlipKart is a fully functional e-commerce site with a user-friendly interface and product management, built with modern technologies."
-                  github="https://github.com/fahim-sarker/cap-ecommerce"
-                  livesite="https://incredible-malasada-81f780.netlify.app/"
+                  image={Project2}
+                  title="Reminder Website "
+                  content="This is a clean and user-friendly Reminder website built to help users manage tasks and stay organized."
+                  github="https://github.com/fahim-sarker/Duelert"
+                  livesite="https://vair-cloud.netlify.app/"
+                />
+                <Workreusable
+                  image={Port3}
+                  title="Car Recovery"
+                  content="This project is a responsive and user-focused website designed for a car recovery and roadside assistance service"
+                  github="https://github.com/fahim-sarker/Car-Breakdown"
+                  livesite="https://www.car-recovery-network.co.uk/"
                 />
               </Row>
             </Tab>
             <Tab eventKey="newspaper" title="Web Design">
               <Row>
-              <Workreusable
-                  image={Port1}
-                  title="Finsweet Multipage"
-                  content="Finsweet Agency's website contains 12 pages built with Bootstrap. Responsive designed to work smoothly on different devices I"
-                  github="https://github.com/fahim-sarker/multipage"
-                  livesite="https://enchanting-cascaron-c7198f.netlify.app/"
+                <Workreusable
+                  image={Port2}
+                  title="Fitness Gym"
+                  content="This is a modern, responsive website designed for a fitness gym. The project showcases my frontend development skills with a clean UI."
+                  github="https://github.com/fahim-sarker/My-Projecct"
+                  livesite="https://galaxy-gym.netlify.app/"
                 />
-                 <Workreusable
+                <Workreusable
                   image={Port9}
                   title="Educational Site"
                   content="I developed a comprehensive, user-friendly website for a Education, designed to improve communication for students, parents, and staff."
@@ -196,61 +168,11 @@ const Work = () => {
                   livesite="https://capeducation.netlify.app/"
                 />
                 <Workreusable
-                  image={Agency}
-                  title="BWFC Agency"
-                  content="BWFC is a stylish agency website built with React and Bootstrap. It features clean design and comprehensive service details I"
-                  github="https://github.com/fahim-sarker/react-figma"
-                  livesite="https://cerulean-seahorse-3730b2.netlify.app/"
-                />
-              </Row>
-            </Tab>
-            <Tab eventKey="portfolio" title="HTML CSS">
-              <Row>
-                <Workreusable
                   image={Port1}
                   title="Finsweet Multipage"
                   content="Finsweet Agency's website contains 12 pages built with Bootstrap. Responsive designed to work smoothly on different devices I"
                   github="https://github.com/fahim-sarker/multipage"
                   livesite="https://enchanting-cascaron-c7198f.netlify.app/"
-                />
-                 <Workreusable
-                  image={NewsPro}
-                  title="Newspaper"
-                  content="Newspro Agency website contains 12 pages built with Bootstrap. Responsive designed to work smoothly on different devices I"
-                  github="https://github.com/fahim-sarker/Newspaper"
-                  livesite="https://fahim-sarker.github.io/Newspaper/"
-                />
-                <Workreusable
-                  image={Agency}
-                  title="BWFC Agency"
-                  content="BWFC is a stylish agency website built with React and Bootstrap. It features clean design and comprehensive service details I"
-                  github="https://github.com/fahim-sarker"
-                  livesite="https://cerulean-seahorse-3730b2.netlify.app/"
-                />
-              </Row>
-            </Tab>
-            <Tab eventKey="restaurant" title="Bootstrap">
-              <Row>
-                <Workreusable
-                  image={Port9}
-                  title="Educational Site"
-                  content="I developed a comprehensive, user-friendly website for a Education, designed to improve communication for students, parents, and staff"
-                  github="https://github.com/fahim-sarker/cap-education"
-                  livesite="https://capeducation.netlify.app/"
-                />
-                <Workreusable
-                  image={Port1}
-                  title="Finsweet Multipage"
-                  content="Finsweet Agency's website contains 12 pages built with Bootstrap. Responsive designed to work smoothly on different devices I"
-                  github="https://github.com/fahim-sarker"
-                  livesite="https://aquamarine-bublanina-e9df9d.netlify.app/"
-                />
-                <Workreusable
-                  image={Agency}
-                  title="BWFC Agency"
-                  content="BWFC is a stylish agency website built with React and Bootstrap. It features clean design and comprehensive service details I"
-                  github="https://github.com/fahim-sarker"
-                  livesite="https://cerulean-seahorse-3730b2.netlify.app/"
                 />
               </Row>
             </Tab>
