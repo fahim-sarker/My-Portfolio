@@ -14,7 +14,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Reviewreusable from "../reviewreusable/Reviewreusable";
 import RazibSir from "../../assets/Razibsir.jpeg";
-import Orebi1 from "../../assets/filecheck.png";
+import Orebi1 from "../../assets/phobe.png";
 import Orebi from "../../assets/orebi.png";
 import Hekto from "../../assets/hekton.png";
 import Viridian from "../../assets/viridian.png";
@@ -102,10 +102,10 @@ const Work = () => {
               <Row>
                 <Workreusable
                   image={Orebi1}
-                  title=" Fraud File Checker Website"
-                  content="This website is designed to help users upload and scan files to detect potential fraud, malware, or malicious content."
-                  github="https://github.com/fahim-sarker/Xeltra"
-                  livesite="https://xeltra.netlify.app/"
+                  title="Smart Shop Website"
+                  content="A modern, responsive eCommerce platform with a smooth UI, product listings, and a clean shopping experience."
+                  github="https://github.com/fahim-sarker/phoebedodds"
+                  livesite="https://phoebedodds.vercel.app/"
                 />
 
                 <Workreusable
