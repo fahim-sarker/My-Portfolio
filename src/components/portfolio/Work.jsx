@@ -14,7 +14,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Reviewreusable from "../reviewreusable/Reviewreusable";
 import RazibSir from "../../assets/Razibsir.jpeg";
-import Orebi1 from "../../assets/phobe.png";
+import Orebi1 from "../../assets/swift.png";
 import Orebi from "../../assets/orebi.png";
 import Hekto from "../../assets/hekton.png";
 import Viridian from "../../assets/viridian.png";
@@ -79,7 +79,7 @@ const Work = () => {
                   title="Multi-Vendor Bar"
                   content="The site features a dedicated multi-vendor bar that allows users to easily filter and browse products by vendor."
                   github="https://github.com/fahim-sarker/alex420"
-                  livesite="https://shipawayy.netlify.app/"
+                  livesite="https://sipawayy.com/"
                 />
                  <Workreusable
                   image={Project2}
@@ -102,10 +102,11 @@ const Work = () => {
               <Row>
                 <Workreusable
                   image={Orebi1}
-                  title="Smart Shop Website"
-                  content="A modern, responsive eCommerce platform with a smooth UI, product listings, and a clean shopping experience."
-                  github="https://github.com/fahim-sarker/phoebedodds"
-                  livesite="https://phoebedodds.vercel.app/"
+                  title="Cargo Website"
+                  content="This project is a responsive and user-focused website designed for 
+                  a Cargo company, showcasing their services and capabilities."
+                  github="https://github.com/fahim-sarker/swift-express-cargo"
+                  livesite="https://swifttcargo.netlify.app/"
                 />
 
                 <Workreusable
@@ -120,8 +121,8 @@ const Work = () => {
                   title="10 Minute Scholl Ielts"
                   content="This is a modern, responsive website  for  10 Minute Ielts Course. The project showcases
                    my frontend development skills with a clean UI."
-                  github="https://github.com/fahim-sarker/My-Projecct"
-                  livesite="https://galaxy-gym.netlify.app/"
+                  github="https://github.com/fahim-sarker/10-Minute-Task"
+                  livesite="https://10-minute-task-ten.vercel.app/en/product/ielts-course"
                 />
               </Row>
             </Tab>
