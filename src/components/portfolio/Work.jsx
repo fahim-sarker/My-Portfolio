@@ -86,7 +86,7 @@ const Work = () => {
                   title="Reminder Website "
                   content="This is a clean and user-friendly Reminder website built to help users manage tasks and stay organized."
                   github="https://github.com/fahim-sarker/Duelert"
-                  livesite="https://vair-cloud.netlify.app/"
+                  livesite="https://duelert.netlify.app/"
                  />
                  <Workreusable
                   image={Port3}
