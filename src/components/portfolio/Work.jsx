@@ -94,7 +94,7 @@ const Work = () => {
                   content="This project is a responsive and user-focused website designed for a Logistic
                    company, showcasing their services and capabilities."
                   github="https://github.com/fahim-sarker/vladimirac"
-                  livesite="https://vladimirac.vercel.app/"
+                  livesite="https://www.savaexpress.com/"
                 />
               </Row>
             </Tab>
