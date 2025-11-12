@@ -11,12 +11,12 @@ function App() {
 
   return (
     <>
-      <Menu/>
-      <Banner/>
-      <About_me/>
-      <Work/>
-      <Service/>
-      <Contact/>
+      <Menu />
+      <Banner />
+      <Work />
+      <About_me />
+      <Service />
+      <Contact />
     </>
   )
 }
