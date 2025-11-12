@@ -3,8 +3,8 @@ import "./work.css";
 import Port1 from "../../assets/port1.png";
 import Port2 from "../../assets/gym1.png";
 import Ten from "../../assets/10.png";
-import Quiz1 from "../../assets/js3.png";
-import Port3 from "../../assets/sava.png";
+import Quiz1 from "../../assets/three.jpeg";
+import Port3 from "../../assets/blackjack.jpeg";
 import Bar from "../../assets/bar.png";
 import Port9 from "../../assets/vue.png";
 import { Tabs, Tab } from "react-bootstrap";
@@ -17,11 +17,13 @@ import RazibSir from "../../assets/Razibsir.jpeg";
 import Orebi1 from "../../assets/swift.png";
 import Orebi from "../../assets/orebi.png";
 import Hekto from "../../assets/hekton.png";
-import Viridian from "../../assets/viridian.png";
-import Project2 from "../../assets/reminder.png";
+import Viridian from "../../assets/model.jpeg";
+import Project2 from "../../assets/rasmik.jpeg";
 import Project3 from "../../assets/drinks.png";
 import Flip from "../../assets/image.png"
-import Todo from "../../assets/todo.png"
+import Todo from "../../assets/jack.jpeg"
+import Block from "../../assets/block.jpeg"
+import Parti from "../../assets/parti.jpeg"
 
 const Work = () => {
   var settings = {
@@ -45,62 +47,35 @@ const Work = () => {
           </div>
         </Row>
         <Row className="text-center flex">
-          <Tabs defaultActiveKey="ecommerce" className="mb-4 list11">
-          {/* <Tab eventKey="chanllenges" title="Challenges">
+          <Tabs defaultActiveKey="Chanllenges" className="mb-4 list11">
+            <Tab eventKey="Chanllenges" title="Challenges">
               <Row>
                 <Workreusable
-                  image={Flip}
-                  title="Sustainable Trades"
-                  content="A dynamic multi-vendor eCommerce platform that connects sellers and buyers in one seamless marketplace."
-                  github="https://github.com/fahim-sarker/melissabooth-123-next-js/settings"
-                  livesite="https://sustainable-trades.vercel.app/"
+                  image={Block}
+                  title="Block Graph"
+                  content="A simple React application that allows users to create and manipulate a tree of draggable nodes."
+                  github="https://github.com/fahim-sarker/Block_Graph"
+                  livesite="https://myblock-graph.netlify.app/"
                 />
                 <Workreusable
-                  image={Orebi}
-                  title="Orebi Ecommerce"
-                  content="Orebi is a fully functional e-commerce site with a user-friendly interface and product management, built with modern technologies."
-                  github="https://github.com/fahim-sarker/E-COMMERECE"
-                  livesite="https://fs-ecommerce.netlify.app/"
-                />
-
-                <Workreusable
-                  image={Hekto}
-                  title="Hekto Ecommerce"
-                  content="Hekto is a fully functional e-commerce site with a user-friendly interface and product management, built with modern technologies."
-                  github="https://github.com/fahim-sarker/hekto"
-                  livesite="https://lucky-peony-d1ab04.netlify.app/"
-                />
-
-              </Row>
-            </Tab> */}
-            <Tab eventKey="ecommerce" title="E-Commerce">
-              <Row>
-                <Workreusable
-                  image={Flip}
-                  title="Sustainable Trades"
-                  content="A dynamic multi-vendor eCommerce platform that connects sellers and buyers in one seamless marketplace."
-                  github="https://github.com/fahim-sarker/melissabooth-123-next-js/settings"
-                  livesite="https://sustainable-trades.vercel.app/"
-                />
-                <Workreusable
-                  image={Orebi}
-                  title="Orebi Ecommerce"
-                  content="Orebi is a fully functional e-commerce site with a user-friendly interface and product management, built with modern technologies."
-                  github="https://github.com/fahim-sarker/E-COMMERECE"
-                  livesite="https://fs-ecommerce.netlify.app/"
+                  image={Parti}
+                  title="Recursive Partitioner"
+                  content="This application Users can start with a single randomly colored pane and dynamically split it into multiple resizable horizontally or vertically."
+                  github="https://github.com/fahim-sarker/Recursive-Partitioner"
+                  livesite="https://sweet-syrniki-564999.netlify.app/"
                 />
 
                 <Workreusable
-                  image={Hekto}
-                  title="Hekto Ecommerce"
-                  content="Hekto is a fully functional e-commerce site with a user-friendly interface and product management, built with modern technologies."
-                  github="https://github.com/fahim-sarker/hekto"
-                  livesite="https://lucky-peony-d1ab04.netlify.app/"
+                  image={Viridian}
+                  title="Scroll Frame Animation"
+                  content="A smooth and interactive scroll animation project where frames change dynamically as users scroll."
+                  github="https://github.com/fahim-sarker/Three-JS-Portfolio"
+                  livesite="https://cheerful-rolypoly-7866d2.netlify.app/"
                 />
 
               </Row>
             </Tab>
-            <Tab eventKey="education" title="React & Next Js">
+            <Tab eventKey="education" title="React Js">
               <Row>
                 <Workreusable
                   image={Bar}
@@ -111,22 +86,57 @@ const Work = () => {
                 />
                 <Workreusable
                   image={Project2}
-                  title="Reminder Website "
-                  content="This is a clean and user-friendly Reminder website built to help users manage tasks and stay organized."
-                  github="https://github.com/fahim-sarker/Duelert"
-                  livesite="https://duelert.netlify.app/"
+                  title="Fire Protection"
+                  content="A responsive and user-focused website built for a logistics company, showcasing their services and operational capabilities."
+                  github="https://github.com/fahim-sarker"
+                  livesite="https://tgrasmick.netlify.app/"
                 />
                 <Workreusable
                   image={Port3}
-                  title="Sava Logistics"
-                  content="This project is a responsive and user-focused website designed for a Logistic
-                   company, showcasing their services and capabilities."
-                  github="https://github.com/fahim-sarker/vladimirac"
-                  livesite="https://www.savaexpress.com/"
+                  title="Black Jack Payments"
+                  content="A clean and user-friendly payment platform designed to streamline online transactions and manage logistics-related payments efficiently."
+                  github="https://github.com/fahim-sarker"
+                  livesite="https://blackjackpay-one.vercel.app/"
                 />
               </Row>
             </Tab>
-            <Tab eventKey="TypeScript" title="TypeScript">
+            <Tab eventKey="Next JS" title="Next JS">
+              <Row>
+                <Workreusable
+                  image={Flip}
+                  title="Sustainable Trades"
+                  content="A dynamic multi-vendor eCommerce platform that connects sellers and buyers in one seamless marketplace."
+                  github="https://github.com/fahim-sarker/melissabooth-123-next-js/settings"
+                  livesite="https://sustainable-trades.vercel.app/"
+                />
+                {/* <Workreusable
+                  image={Orebi}
+                  title="Orebi Ecommerce"
+                  content="Orebi is a fully functional e-commerce site with a user-friendly interface and product management, built with modern technologies."
+                  github="https://github.com/fahim-sarker/E-COMMERECE"
+                  livesite="https://fs-ecommerce.netlify.app/"
+                /> */}
+                <Workreusable
+                  image={Ten}
+                  title="10 Minute Scholl Ielts"
+                  content="This is a modern, responsive website  for  10 Minute Ielts Course. The project showcases
+                   my frontend development skills with a clean UI."
+                  github="https://github.com/fahim-sarker/10-Minute-Task"
+                  livesite="https://10-minute-task-ten.vercel.app/en/product/ielts-course"
+                />
+
+                <Workreusable
+                  image={Hekto}
+                  title="Hekto Ecommerce"
+                  content="Hekto is a fully functional e-commerce site with a user-friendly interface and product management, built with modern technologies."
+                  github="https://github.com/fahim-sarker/hekto"
+                  livesite="https://lucky-peony-d1ab04.netlify.app/"
+                />
+
+              </Row>
+            </Tab>
+
+            {/* <Tab eventKey="TypeScript" title="TypeScript">
               <Row>
                 <Workreusable
                   image={Ten}
@@ -153,16 +163,9 @@ const Work = () => {
                   livesite="https://viridianbray-client.netlify.app"
                 />
               </Row>
-            </Tab>
-            <Tab eventKey="business" title="JS & GSAP">
+            </Tab> */}
+            <Tab eventKey="business" title="GSAP & Three JS">
               <Row>
-                <Workreusable
-                  image={Quiz1}
-                  title="Quiz Applicaton"
-                  content="This project is an Interactive Quiz-Application and showing final result building using HTML, CSS, and JavaScript  knowledge."
-                  github="https://github.com/fahim-sarker/Quiz-Application"
-                  livesite="https://dancing-semifreddo-982a32.netlify.app/"
-                />
                 <Workreusable
                   image={Project3}
                   title="Drinks Website Made with GSAP"
@@ -171,12 +174,21 @@ const Work = () => {
                   livesite="https://spylt-gsap.netlify.app/"
                 />
                 <Workreusable
-                  image={Todo}
-                  title="JavaScript To-Do List"
-                  content="I built a dynamic and interactive to-do list application using vanilla JavaScript, focusing on providing  way to manage daily tasks"
-                  github="https://github.com/fahim-sarker/Javascript-To-do"
-                  livesite="https://fascinating-nougat-b22f65.netlify.app/"
+                  image={Quiz1}
+                  title="Three JS Portfolio"
+                  content="An interactive 3D portfolio website built with Three.js, showcasing creative animations, models, and smooth user interactions."
+                  github="https://github.com/fahim-sarker/Three-JS-Portfolio"
+                  livesite="https://mythreejsportfolio.netlify.app/"
                 />
+
+                <Workreusable
+                  image={Todo}
+                  title="Car Showcase Website"
+                  content="A visually engaging car showcase website built with GSAP animations, highlighting different car models with smooth transitions."
+                  github="https://github.com/fahim-sarker/JACK-GSAP"
+                  livesite="https://jack-gsap.netlify.app/"
+                />
+
               </Row>
             </Tab>
 
