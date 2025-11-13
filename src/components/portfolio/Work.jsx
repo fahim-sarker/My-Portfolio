@@ -220,7 +220,7 @@ const Work = () => {
             </Tab>
           </Tabs>
         </Row>
-        <Row>
+        {/* <Row>
           <div className="review">
             <div className="review-head text-center">
               <h2>Testimonials</h2>
@@ -241,7 +241,7 @@ const Work = () => {
               />
             </Slider>
           </div>
-        </Row>
+        </Row> */}
       </Container>
     </section>
   );
