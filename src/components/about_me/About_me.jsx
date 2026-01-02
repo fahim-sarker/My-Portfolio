@@ -8,7 +8,7 @@ import CountUp from "react-countup";
 
 const About_me = () => {
   const stats = [
-    { value: 1, label: "Years of Experience" },
+    { value: 2, label: "Years of Experience" },
     { value: 5, label: "Happy Customers" },
     { value: 15, label: "Projects Done" },
     { value: 3, label: "Awards Won" },
