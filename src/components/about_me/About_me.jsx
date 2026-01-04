@@ -1,10 +1,10 @@
-import { Container, Row, Col } from "react-bootstrap";
 import "./about_me.css";
+import CountUp from "react-countup";
+import CV from "../../assets/updatecv.pdf";
+import { Container, Row, Col } from "react-bootstrap";
 import { RiHomeOfficeLine } from "react-icons/ri";
 import { FaGraduationCap, FaPenRuler, FaBullhorn } from "react-icons/fa6";
 import { CircularProgressbarWithChildren } from "react-circular-progressbar";
-import CV from "../../assets/updatecv.pdf";
-import CountUp from "react-countup";
 
 const About_me = () => {
   const stats = [
