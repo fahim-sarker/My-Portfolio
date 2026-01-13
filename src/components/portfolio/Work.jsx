@@ -1,5 +1,5 @@
-import { Container, Row } from "react-bootstrap";
 import "./work.css";
+import { Container, Row } from "react-bootstrap";
 import Port1 from "../../assets/port1.png";
 import Port2 from "../../assets/gym1.png";
 import Ten from "../../assets/10.png";
@@ -11,14 +11,13 @@ import { Tabs, Tab } from "react-bootstrap";
 import Workreusable from "../workreusable/Workreusable";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
 import Reviewreusable from "../reviewreusable/Reviewreusable";
 import RazibSir from "../../assets/Razibsir.jpeg";
 import Orebi1 from "../../assets/swift.png";
 import Orebi from "../../assets/orebi.png";
-import Hekto from "../../assets/hekton.png";
+import Hekto from "../../assets/sava.png";
 import Viridian from "../../assets/model.jpeg";
-import Project2 from "../../assets/rasmik.jpeg";
+import Project2 from "../../assets/swift.png";
 import Project3 from "../../assets/drinks.png";
 import Flip from "../../assets/image.png"
 import Todo from "../../assets/jack.jpeg"
@@ -86,17 +85,17 @@ const Work = () => {
                 />
                 <Workreusable
                   image={Project2}
-                  title="Fire Protection"
+                  title="Swift Express"
                   content="A responsive and user-focused website built for a logistics company, showcasing their services and operational capabilities."
                   github="https://github.com/fahim-sarker"
-                  livesite="https://tgrasmick.netlify.app/"
+                  livesite="https://swiftexpressbb.com/"
                 />
                 <Workreusable
                   image={Port3}
                   title="Black Jack Payments"
-                  content="A clean and user-friendly payment platform designed to streamline online transactions and manage logistics-related payments efficiently."
+                  content="Discover our expertise in low and high-risk payment processing for a wide range of industries."
                   github="https://github.com/fahim-sarker"
-                  livesite="https://blackjackpay-one.vercel.app/"
+                  livesite="https://blackjackpay-frontend.vercel.app/"
                 />
               </Row>
             </Tab>
@@ -116,6 +115,15 @@ const Work = () => {
                   github="https://github.com/fahim-sarker/E-COMMERECE"
                   livesite="https://fs-ecommerce.netlify.app/"
                 /> */}
+
+                <Workreusable
+                  image={Hekto}
+                  title="SavaExpress"
+                  content="Savaexpress is a transport website that is build with Next Js and fully responsive across all of devices."
+                  github="https://github.com/fahim-sarker/vladimirac"
+                  livesite="https://www.savaexpress.com/"
+                />
+
                 <Workreusable
                   image={Ten}
                   title="10 Minute Scholl Ielts"
@@ -125,13 +133,7 @@ const Work = () => {
                   livesite="https://10-minute-task-ten.vercel.app/en/product/ielts-course"
                 />
 
-                <Workreusable
-                  image={Hekto}
-                  title="Hekto Ecommerce"
-                  content="Hekto is a fully functional e-commerce site with a user-friendly interface and product management, built with modern technologies."
-                  github="https://github.com/fahim-sarker/hekto"
-                  livesite="https://lucky-peony-d1ab04.netlify.app/"
-                />
+
 
               </Row>
             </Tab>
