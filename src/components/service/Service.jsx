@@ -1,10 +1,7 @@
-import React from "react";
 import "./service.css";
-import { Col, Container, Row } from "react-bootstrap";
+import React from "react";
+import { Container, Row } from "react-bootstrap";
 import Servicereusable from "../servicereusable/Servicereusable";
-import EmailSig from "../../assets/figma.png";
-import WebDgn from "../../assets/web design.png";
-import WebDev from "../../assets/web development.png";
 
 const Service = () => {
   return (
@@ -20,26 +17,38 @@ const Service = () => {
           </Row>
           <Row>
             <Servicereusable
-              sampleimg={EmailSig}
-              title="Figma to HTML"
-              para="If you have a design in Figma, Adobe XD, PSD, or AI, I can transform it into a fully responsive, high-quality Responsive Design
-              Cross-Browser Compatibility HTML website that maintains the integrity of your original vision and Pixel-Perfect Conversion."
+              title="Frontend Engineering"
+              para="I build fast, scalable, and user-friendly web interfaces using modern frontend technologies like React, Next.js, HTML, CSS, and JavaScript. My focus is on clean code, performance optimization, accessibility, and seamless user experiences across all devices."
             />
 
             <Servicereusable
-              sampleimg={WebDgn}
-              title="Web Design"
-              para="In today’s business world, growth means using lead-generating websites that engage customers and search engines. Your website is a vital marketing asset, shaping your digital presence and delivering business results."
+              title="React& Nextjs Development"
+              para="I develop dynamic, component-based web applications using React & Next js with reusable components, efficient state management, and modern best practices. From single-page applications to complex dashboards."
             />
 
             <Servicereusable
-              sampleimg={WebDev}
-              title="Web Development"
-              para="In our tech-driven world, globalization's rapid advancement affects various sectors. Whether a small or large business, software simplifies operations, enabling effective management and facilitating success.Technology Life Productivity."
+              title="React Native Mobile App Development"
+              para="I create high-quality cross-platform mobile applications using React Native for both Android and iOS. My apps are optimized for performance, follow platform-specific UI guidelines, and deliver smooth, native-like user experiences."
             />
+
+            <Servicereusable
+              title="UI/UX Design & Implementation"
+              para="I design and implement intuitive, visually appealing, and user-centered interfaces. From wireframes to final UI, I focus on usability, consistency, and accessibility to ensure an engaging experience that aligns with your brand."
+            />
+
+            <Servicereusable
+              title="Figma to Responsive Code"
+              para="I convert Figma, Adobe XD, PSD, or AI designs into pixel-perfect, fully responsive web and mobile interfaces. The final output maintains design accuracy, cross-browser compatibility, and clean, well-structured code."
+            />
+
+            <Servicereusable
+              title="Web & Mobile UI Optimization"
+              para="I enhance existing web and mobile applications by improving UI consistency, responsiveness, and performance. This includes refactoring UI components, and ensuring a smooth experience across different screen sizes and devices."
+            />
+
           </Row>
         </Container>
-      </section>
+      </section >
     </>
   );
 };

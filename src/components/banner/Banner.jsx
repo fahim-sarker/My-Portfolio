@@ -16,6 +16,8 @@ const Banner = () => {
                   1000,
                   "I am a React Developer",
                   1000,
+                  "I am a React Native Developer",
+                  1000,
                   "I am a Next Js Developer",
                   1000,
                 ]}
@@ -35,7 +37,7 @@ const Banner = () => {
                 crafting clean & user‑friendly experiences. I am passionate
                 about building excellent web applications that improves the
                 lives of those around me. With expertise in Tailwind
-                CSS, React JS,Next JS & TypeScript. I bring innovative web solutions to life.
+                CSS, React, React Native,Next JS & TypeScript. I bring innovative web solutions to life.
                 Let's build something great together!
               </p>
               <a href="#">
