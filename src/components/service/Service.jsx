@@ -22,7 +22,7 @@ const Service = () => {
             />
 
             <Servicereusable
-              title="React& Nextjs Development"
+              title="React & Nextjs Development"
               para="I develop dynamic, component-based web applications using React & Next js with reusable components, efficient state management, and modern best practices. From single-page applications to complex dashboards."
             />
 
