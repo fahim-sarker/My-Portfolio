@@ -1,6 +1,6 @@
-import { Col, Container, Row } from "react-bootstrap";
 import "./banner.css";
 import { TypeAnimation } from "react-type-animation";
+import { Col, Container, Row } from "react-bootstrap";
 
 const Banner = () => {
   return (

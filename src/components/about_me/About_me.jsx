@@ -1,8 +1,8 @@
 import "./about_me.css";
 import CountUp from "react-countup";
 import CV from "../../assets/cv.pdf";
-import { Container, Row, Col } from "react-bootstrap";
 import { RiHomeOfficeLine } from "react-icons/ri";
+import { Container, Row, Col } from "react-bootstrap";
 import { FaGraduationCap, FaPenRuler, FaBullhorn } from "react-icons/fa6";
 import { CircularProgressbarWithChildren } from "react-circular-progressbar";
 
