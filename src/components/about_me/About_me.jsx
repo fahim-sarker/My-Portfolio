@@ -9,19 +9,19 @@ import { CircularProgressbarWithChildren } from "react-circular-progressbar";
 const About_me = () => {
   const stats = [
     { value: 2, label: "Years of Experience" },
-    { value: 5, label: "Happy Customers" },
-    { value: 15, label: "Projects Done" },
+    { value: 20, label: "Happy Customers" },
+    { value: 30, label: "Projects Done" },
     { value: 3, label: "Awards Won" },
   ];
   const skills = [
-    { name: "HTML", value: 85 },
-    { name: "CSS", value: 80 },
-    { name: "JavaScript", value: 65 },
-    { name: "Bootstrap", value: 90 },
-    { name: "Tailwind CSS", value: 90 },
-    { name: "React JS", value: 80 },
-    { name: "Next JS", value: 70 },
-    { name: "GitHub", value: 85 },
+    { name: "HTML", },
+    { name: "CSS", },
+    { name: "JavaScript" },
+    { name: "Bootstrap"},
+    { name: "Tailwind CSS" },
+    { name: "React JS",},
+    { name: "Next JS", },
+    { name: "GitHub",},
   ];
   return (
     <section id="about">
@@ -126,7 +126,7 @@ const About_me = () => {
                     ></CircularProgressbarWithChildren>
                   </div>
                   <div className="center_text">
-                    <h2>85%</h2>
+                    
                     <h2>HTML</h2>
                   </div>
                 </div>
@@ -139,7 +139,7 @@ const About_me = () => {
                     ></CircularProgressbarWithChildren>
                   </div>
                   <div className="center_text">
-                    <h2>80%</h2>
+                
                     <h2>CSS</h2>
                   </div>
                 </div>
@@ -152,7 +152,7 @@ const About_me = () => {
                     ></CircularProgressbarWithChildren>
                   </div>
                   <div className="center_text">
-                    <h2>65%</h2>
+                
                     <h2>Javascript</h2>
                   </div>
                 </div>
@@ -165,7 +165,7 @@ const About_me = () => {
                     ></CircularProgressbarWithChildren>
                   </div>
                   <div className="center_text">
-                    <h2>90%</h2>
+              
                     <h2>Bootstrap</h2>
                   </div>
                 </div>
@@ -178,7 +178,7 @@ const About_me = () => {
                     ></CircularProgressbarWithChildren>
                   </div>
                   <div className="center_text">
-                    <h2>90%</h2>
+                  
                     <h2>Tailwind CSS</h2>
                   </div>
                 </div>
@@ -191,7 +191,7 @@ const About_me = () => {
                     ></CircularProgressbarWithChildren>
                   </div>
                   <div className="center_text">
-                    <h2>80%</h2>
+                  
                     <h2>React JS</h2>
                   </div>
                 </div>
@@ -204,8 +204,99 @@ const About_me = () => {
                     ></CircularProgressbarWithChildren>
                   </div>
                   <div className="center_text">
-                    <h2>70%</h2>
+                  
+                    <h2>React Native</h2>
+                  </div>
+                </div>
+              </Col>
+              <Col lg={3} xs={6}>
+                <div className="circle_mother">
+                  <div className="circle">
+                    <CircularProgressbarWithChildren
+                      value={70}
+                    ></CircularProgressbarWithChildren>
+                  </div>
+                  <div className="center_text">
+                
                     <h2>NEXT JS</h2>
+                  </div>
+                </div>
+              </Col>
+              <Col lg={3} xs={6}>
+                <div className="circle_mother">
+                  <div className="circle">
+                    <CircularProgressbarWithChildren
+                      value={70}
+                    ></CircularProgressbarWithChildren>
+                  </div>
+                  <div className="center_text">
+                
+                    <h2>Redux</h2>
+                  </div>
+                </div>
+              </Col>
+              <Col lg={3} xs={6}>
+                <div className="circle_mother">
+                  <div className="circle">
+                    <CircularProgressbarWithChildren
+                      value={70}
+                    ></CircularProgressbarWithChildren>
+                  </div>
+                  <div className="center_text">
+                
+                    <h2>React Query</h2>
+                  </div>
+                </div>
+              </Col>
+               <Col lg={3} xs={6}>
+                <div className="circle_mother">
+                  <div className="circle">
+                    <CircularProgressbarWithChildren
+                      value={70}
+                    ></CircularProgressbarWithChildren>
+                  </div>
+                  <div className="center_text">
+                
+                    <h2>TanStack Query</h2>
+                  </div>
+                </div>
+              </Col>
+              <Col lg={3} xs={6}>
+                <div className="circle_mother">
+                  <div className="circle">
+                    <CircularProgressbarWithChildren
+                      value={70}
+                    ></CircularProgressbarWithChildren>
+                  </div>
+                  <div className="center_text">
+                
+                    <h2>Shadcn</h2>
+                  </div>
+                </div>
+              </Col>
+               <Col lg={3} xs={6}>
+                <div className="circle_mother">
+                  <div className="circle">
+                    <CircularProgressbarWithChildren
+                      value={70}
+                    ></CircularProgressbarWithChildren>
+                  </div>
+                  <div className="center_text">
+                
+                    <h2>GSAP</h2>
+                  </div>
+                </div>
+              </Col>
+               <Col lg={3} xs={6}>
+                <div className="circle_mother">
+                  <div className="circle">
+                    <CircularProgressbarWithChildren
+                      value={70}
+                    ></CircularProgressbarWithChildren>
+                  </div>
+                  <div className="center_text">
+                
+                    <h2>Framer Motion</h2>
                   </div>
                 </div>
               </Col>
@@ -217,8 +308,21 @@ const About_me = () => {
                     ></CircularProgressbarWithChildren>
                   </div>
                   <div className="center_text">
-                    <h2>85%</h2>
+                    
                     <h2>GitHub</h2>
+                  </div>
+                </div>
+              </Col>
+              <Col lg={3} xs={6}>
+                <div className="circle_mother">
+                  <div className="circle">
+                    <CircularProgressbarWithChildren
+                      value={85}
+                    ></CircularProgressbarWithChildren>
+                  </div>
+                  <div className="center_text">
+                    
+                    <h2>BitBucket</h2>
                   </div>
                 </div>
               </Col>

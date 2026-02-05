@@ -4,17 +4,13 @@ import Port1 from "../../assets/port1.png";
 import Port2 from "../../assets/gym1.png";
 import Ten from "../../assets/10.png";
 import Quiz1 from "../../assets/three.jpeg";
-import Port3 from "../../assets/blackjack.jpeg";
+import Port3 from "../../assets/home.jpg";
 import Bar from "../../assets/bar.png";
 import Port9 from "../../assets/vue.png";
 import { Tabs, Tab } from "react-bootstrap";
 import Workreusable from "../workreusable/Workreusable";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Reviewreusable from "../reviewreusable/Reviewreusable";
-import RazibSir from "../../assets/Razibsir.jpeg";
-import Orebi1 from "../../assets/swift.png";
-import Orebi from "../../assets/orebi.png";
 import Hekto from "../../assets/sava.png";
 import Viridian from "../../assets/model.jpeg";
 import Project2 from "../../assets/swift.png";
@@ -77,6 +73,14 @@ const Work = () => {
             <Tab eventKey="education" title="React Js">
               <Row>
                 <Workreusable
+                  image={Port3}
+                  title="Sms Home Website"
+                  content="
+SMS Home connects you with reliable, trained, and background-verified service experts across Dubai and Abu Dhabi."
+                  github="https://bitbucket.org/lyans-creative/sms_home_admin_website/"
+                  livesite="https://smshome.ae/"
+                />
+                <Workreusable
                   image={Bar}
                   title="Multi-Vendor Bar"
                   content="The site features a dedicated multi-vendor bar that allows users to easily filter and browse products by vendor."
@@ -89,13 +93,6 @@ const Work = () => {
                   content="A responsive and user-focused website built for a logistics company, showcasing their services and operational capabilities."
                   github="https://github.com/fahim-sarker"
                   livesite="https://swiftexpressbb.com/"
-                />
-                <Workreusable
-                  image={Port3}
-                  title="Black Jack Payments"
-                  content="Discover our expertise in low and high-risk payment processing for a wide range of industries."
-                  github="https://github.com/fahim-sarker"
-                  livesite="https://blackjackpay-frontend.vercel.app/"
                 />
               </Row>
             </Tab>
