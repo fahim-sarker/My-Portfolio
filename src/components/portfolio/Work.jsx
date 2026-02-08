@@ -1,24 +1,24 @@
 import "./work.css";
-import { Container, Row } from "react-bootstrap";
-import Port1 from "../../assets/port1.png";
-import Port2 from "../../assets/gym1.png";
 import Ten from "../../assets/10.png";
-import Quiz1 from "../../assets/three.jpeg";
-import Port3 from "../../assets/home.jpg";
 import Bar from "../../assets/bar.png";
-import Port9 from "../../assets/vue.png";
-import { Tabs, Tab } from "react-bootstrap";
-import Workreusable from "../workreusable/Workreusable";
 import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Hekto from "../../assets/sava.png";
-import Viridian from "../../assets/model.jpeg";
-import Project2 from "../../assets/swift.png";
-import Project3 from "../../assets/drinks.png";
-import Flip from "../../assets/image.png"
+import Port9 from "../../assets/vue.png";
 import Todo from "../../assets/jack.jpeg"
+import Flip from "../../assets/image.png"
+import Port2 from "../../assets/gym1.png";
+import Port3 from "../../assets/home.jpg";
+import Hekto from "../../assets/sava.png";
+import Port1 from "../../assets/port1.png";
+import Quiz1 from "../../assets/three.jpeg";
 import Block from "../../assets/block.jpeg"
 import Parti from "../../assets/parti.jpeg"
+import { Tabs, Tab } from "react-bootstrap";
+import "slick-carousel/slick/slick-theme.css";
+import Project2 from "../../assets/swift.png";
+import Viridian from "../../assets/model.jpeg";
+import Project3 from "../../assets/drinks.png";
+import { Container, Row } from "react-bootstrap";
+import Workreusable from "../workreusable/Workreusable";
 
 const Work = () => {
   var settings = {
@@ -76,7 +76,7 @@ const Work = () => {
                   image={Port3}
                   title="Sms Home Website"
                   content="
-SMS Home connects you with reliable, trained, and background-verified service experts across Dubai and Abu Dhabi."
+                  SMS Home connects you with reliable, trained, and background-verified service experts across Dubai and Abu Dhabi."
                   github="https://bitbucket.org/lyans-creative/sms_home_admin_website/"
                   livesite="https://smshome.ae/"
                 />
