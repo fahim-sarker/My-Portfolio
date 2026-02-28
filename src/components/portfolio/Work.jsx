@@ -8,6 +8,7 @@ import Flip from "../../assets/image.png"
 import Port2 from "../../assets/gym1.png";
 import Port3 from "../../assets/home.jpg";
 import Hekto from "../../assets/sava.png";
+import John from "../../assets/john.png";
 import Port1 from "../../assets/port1.png";
 import Quiz1 from "../../assets/three.jpeg";
 import Block from "../../assets/block.jpeg"
@@ -105,13 +106,14 @@ const Work = () => {
                   github="https://github.com/fahim-sarker/melissabooth-123-next-js/settings"
                   livesite="https://sustainable-trades.vercel.app/"
                 />
-                {/* <Workreusable
-                  image={Orebi}
-                  title="Orebi Ecommerce"
-                  content="Orebi is a fully functional e-commerce site with a user-friendly interface and product management, built with modern technologies."
-                  github="https://github.com/fahim-sarker/E-COMMERECE"
-                  livesite="https://fs-ecommerce.netlify.app/"
-                /> */}
+
+                <Workreusable
+                  image={John}
+                  title="Terranlink"
+                  content="This is a modern, responsive user-friendly ,website for property buyer and seller. It features advance property listings."
+                  github="https://github.com/fahim-sarker/johndox-frontend"
+                  livesite="https://johndox.vercel.app/"
+                />
 
                 <Workreusable
                   image={Hekto}
@@ -120,17 +122,6 @@ const Work = () => {
                   github="https://github.com/fahim-sarker/vladimirac"
                   livesite="https://www.savaexpress.com/"
                 />
-
-                <Workreusable
-                  image={Ten}
-                  title="10 Minute Scholl Ielts"
-                  content="This is a modern, responsive website  for  10 Minute Ielts Course. The project showcases
-                   my frontend development skills with a clean UI."
-                  github="https://github.com/fahim-sarker/10-Minute-Task"
-                  livesite="https://10-minute-task-ten.vercel.app/en/product/ielts-course"
-                />
-
-
 
               </Row>
             </Tab>

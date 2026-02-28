@@ -13,16 +13,16 @@ const About_me = () => {
     { value: 30, label: "Projects Done" },
     { value: 3, label: "Awards Won" },
   ];
-  const skills = [
-    { name: "HTML", },
-    { name: "CSS", },
-    { name: "JavaScript" },
-    { name: "Bootstrap"},
-    { name: "Tailwind CSS" },
-    { name: "React JS",},
-    { name: "Next JS", },
-    { name: "GitHub",},
-  ];
+  // const skills = [
+  //   { name: "HTML", },
+  //   { name: "CSS", },
+  //   { name: "JavaScript" },
+  //   { name: "Bootstrap"},
+  //   { name: "Tailwind CSS" },
+  //   { name: "React JS",},
+  //   { name: "Next JS", },
+  //   { name: "GitHub",},
+  // ];
   return (
     <section id="about">
       <Container>

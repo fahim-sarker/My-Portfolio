@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
 import "./menu.css"
+import React, { useEffect, useState } from 'react'
 import { Container, Navbar, Nav } from 'react-bootstrap'
 import { IoIosHome, IoIosContact } from "react-icons/io";
 import { FaFacebook, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
