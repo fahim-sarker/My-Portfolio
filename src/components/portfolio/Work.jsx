@@ -1,5 +1,4 @@
 import "./work.css";
-import Ten from "../../assets/10.png";
 import Bar from "../../assets/bar.png";
 import "slick-carousel/slick/slick.css";
 import Port9 from "../../assets/vue.png";
