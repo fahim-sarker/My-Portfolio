@@ -110,7 +110,7 @@ const Work = () => {
                 <Workreusable
                   image={John}
                   title="Terranlink"
-                  content="This is a modern, responsive user-friendly ,website for property buyer and seller. It features advance property listings."
+                  content="This is a modern, responsive user-friendly website for property buyer and seller. It features advance property listings."
                   github="https://github.com/fahim-sarker/johndox-frontend"
                   livesite="https://johndox.vercel.app/"
                 />
