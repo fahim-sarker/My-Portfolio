@@ -1,20 +1,20 @@
 import "./work.css";
-import Ten from "../../assets/10.png";
-import Bar from "../../assets/bar.png";
+import Ten from "../../assets/fistech.png";
+import Bar from "../../assets/native.png";
 import "slick-carousel/slick/slick.css";
 import Port9 from "../../assets/vue.png";
 import Todo from "../../assets/jack.jpeg"
 import Flip from "../../assets/image.png"
 import Port2 from "../../assets/gym1.png";
 import Port3 from "../../assets/home.jpg";
-import Hekto from "../../assets/sava.png";
+import Hekto from "../../assets/nexbazar.png";
 import Port1 from "../../assets/port1.png";
 import Quiz1 from "../../assets/three.jpeg";
 import Block from "../../assets/block.jpeg"
 import Parti from "../../assets/parti.jpeg"
 import { Tabs, Tab } from "react-bootstrap";
 import "slick-carousel/slick/slick-theme.css";
-import Project2 from "../../assets/swift.png";
+import Project2 from "../../assets/destiny.png";
 import Viridian from "../../assets/model.jpeg";
 import Project3 from "../../assets/drinks.png";
 import { Container, Row } from "react-bootstrap";
@@ -70,7 +70,7 @@ const Work = () => {
 
               </Row>
             </Tab>
-            <Tab eventKey="education" title="React Js">
+            <Tab eventKey="education" title="React & React Native">
               <Row>
                 <Workreusable
                   image={Port3}
@@ -82,17 +82,17 @@ const Work = () => {
                 />
                 <Workreusable
                   image={Bar}
-                  title="Multi-Vendor Bar"
-                  content="The site features a dedicated multi-vendor bar that allows users to easily filter and browse products by vendor."
-                  github="https://github.com/fahim-sarker/alex420"
-                  livesite="https://sipawayy.com/"
+                  title="Lafyuu Ecommerce"
+                  content="The App build with React Native for a Ecommerce Platform.This App is optimized for android & ios"
+                  github="https://github.com/fahim-sarker/Lafyuu-Ecommerce-Native-App"
+                  // livesite="https://expo.dev/accounts/fahim_sarker/projects/lafyuecommerce/builds/4cbf3891-9dda-4a15-9481-ab3746661734"
                 />
                 <Workreusable
                   image={Project2}
-                  title="Swift Express"
-                  content="A responsive and user-focused website built for a logistics company, showcasing their services and operational capabilities."
-                  github="https://github.com/fahim-sarker"
-                  livesite="https://swiftexpressbb.com/"
+                  title="Daily Destiny"
+                  content="A responsive and user-focused website built for a News & Tv Chanel, showcasing National,International News."
+                  github="https://github.com/fistech-ventures/daily-destiny-web"
+                livesite="https://dailydestinybd.com/bn"
                 />
               </Row>
             </Tab>
@@ -105,29 +105,23 @@ const Work = () => {
                   github="https://github.com/fahim-sarker/melissabooth-123-next-js/settings"
                   livesite="https://sustainable-trades.vercel.app/"
                 />
-                {/* <Workreusable
-                  image={Orebi}
-                  title="Orebi Ecommerce"
-                  content="Orebi is a fully functional e-commerce site with a user-friendly interface and product management, built with modern technologies."
-                  github="https://github.com/fahim-sarker/E-COMMERECE"
-                  livesite="https://fs-ecommerce.netlify.app/"
-                /> */}
+
 
                 <Workreusable
                   image={Hekto}
-                  title="SavaExpress"
-                  content="Savaexpress is a transport website that is build with Next Js and fully responsive across all of devices."
-                  github="https://github.com/fahim-sarker/vladimirac"
-                  livesite="https://www.savaexpress.com/"
+                  title="NexBazar"
+                  content="NexBazar is a Eccomerce website that is build with Next Js and fully responsive across all of devices."
+                  github="https://github.com/fistech-ventures/amorubi-ecommerce"
+                  livesite="https://www.nexbazarbd.com/"
                 />
 
                 <Workreusable
                   image={Ten}
-                  title="10 Minute Scholl Ielts"
-                  content="This is a modern, responsive website  for  10 Minute Ielts Course. The project showcases
+                  title="Fistech"
+                  content="This is a modern, responsive website for Fistech Agency. The project showcases
                    my frontend development skills with a clean UI."
-                  github="https://github.com/fahim-sarker/10-Minute-Task"
-                  livesite="https://10-minute-task-ten.vercel.app/en/product/ielts-course"
+                  github="https://github.com/fistech-ventures/fistech-web"
+                  livesite="https://fistech.org"
                 />
 
 
@@ -135,34 +129,7 @@ const Work = () => {
               </Row>
             </Tab>
 
-            {/* <Tab eventKey="TypeScript" title="TypeScript">
-              <Row>
-                <Workreusable
-                  image={Ten}
-                  title="10 Minute Scholl Ielts"
-                  content="This is a modern, responsive website  for  10 Minute Ielts Course. The project showcases
-                   my frontend development skills with a clean UI."
-                  github="https://github.com/fahim-sarker/10-Minute-Task"
-                  livesite="https://10-minute-task-ten.vercel.app/en/product/ielts-course"
-                />
-                <Workreusable
-                  image={Orebi1}
-                  title="Cargo Website"
-                  content="This project is a responsive and user-focused website designed for 
-                  a Cargo company, showcasing their services and capabilities."
-                  github="https://github.com/fahim-sarker/swift-express-cargo"
-                  livesite="https://graphfull.vercel.app/"
-                />
 
-                <Workreusable
-                  image={Viridian}
-                  title="Business Task Management"
-                  content="This project is a full-featured task management web application built for teams and businesses to organize, track, and manage tasks efficiently."
-                  github="https://github.com/fahim-sarker/Viridian"
-                  livesite="https://viridianbray-client.netlify.app"
-                />
-              </Row>
-            </Tab> */}
             <Tab eventKey="business" title="GSAP & Three JS">
               <Row>
                 <Workreusable

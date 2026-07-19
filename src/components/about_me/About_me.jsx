@@ -8,21 +8,12 @@ import { CircularProgressbarWithChildren } from "react-circular-progressbar";
 
 const About_me = () => {
   const stats = [
-    { value: 2, label: "Years of Experience" },
+    { value: 2.5, label: "Years of Experience" },
     { value: 20, label: "Happy Customers" },
     { value: 30, label: "Projects Done" },
     { value: 3, label: "Awards Won" },
   ];
-  const skills = [
-    { name: "HTML", },
-    { name: "CSS", },
-    { name: "JavaScript" },
-    { name: "Bootstrap"},
-    { name: "Tailwind CSS" },
-    { name: "React JS",},
-    { name: "Next JS", },
-    { name: "GitHub",},
-  ];
+
   return (
     <section id="about">
       <Container>
@@ -126,7 +117,7 @@ const About_me = () => {
                     ></CircularProgressbarWithChildren>
                   </div>
                   <div className="center_text">
-                    
+
                     <h2>HTML</h2>
                   </div>
                 </div>
@@ -139,7 +130,7 @@ const About_me = () => {
                     ></CircularProgressbarWithChildren>
                   </div>
                   <div className="center_text">
-                
+
                     <h2>CSS</h2>
                   </div>
                 </div>
@@ -152,7 +143,7 @@ const About_me = () => {
                     ></CircularProgressbarWithChildren>
                   </div>
                   <div className="center_text">
-                
+
                     <h2>Javascript</h2>
                   </div>
                 </div>
@@ -165,7 +156,7 @@ const About_me = () => {
                     ></CircularProgressbarWithChildren>
                   </div>
                   <div className="center_text">
-              
+
                     <h2>Bootstrap</h2>
                   </div>
                 </div>
@@ -178,7 +169,7 @@ const About_me = () => {
                     ></CircularProgressbarWithChildren>
                   </div>
                   <div className="center_text">
-                  
+
                     <h2>Tailwind CSS</h2>
                   </div>
                 </div>
@@ -191,7 +182,7 @@ const About_me = () => {
                     ></CircularProgressbarWithChildren>
                   </div>
                   <div className="center_text">
-                  
+
                     <h2>React JS</h2>
                   </div>
                 </div>
@@ -204,7 +195,7 @@ const About_me = () => {
                     ></CircularProgressbarWithChildren>
                   </div>
                   <div className="center_text">
-                  
+
                     <h2>React Native</h2>
                   </div>
                 </div>
@@ -217,7 +208,7 @@ const About_me = () => {
                     ></CircularProgressbarWithChildren>
                   </div>
                   <div className="center_text">
-                
+
                     <h2>NEXT JS</h2>
                   </div>
                 </div>
@@ -230,7 +221,7 @@ const About_me = () => {
                     ></CircularProgressbarWithChildren>
                   </div>
                   <div className="center_text">
-                
+
                     <h2>Redux</h2>
                   </div>
                 </div>
@@ -243,12 +234,12 @@ const About_me = () => {
                     ></CircularProgressbarWithChildren>
                   </div>
                   <div className="center_text">
-                
+
                     <h2>React Query</h2>
                   </div>
                 </div>
               </Col>
-               <Col lg={3} xs={6}>
+              <Col lg={3} xs={6}>
                 <div className="circle_mother">
                   <div className="circle">
                     <CircularProgressbarWithChildren
@@ -256,7 +247,7 @@ const About_me = () => {
                     ></CircularProgressbarWithChildren>
                   </div>
                   <div className="center_text">
-                
+
                     <h2>TanStack Query</h2>
                   </div>
                 </div>
@@ -269,12 +260,12 @@ const About_me = () => {
                     ></CircularProgressbarWithChildren>
                   </div>
                   <div className="center_text">
-                
+
                     <h2>Shadcn</h2>
                   </div>
                 </div>
               </Col>
-               <Col lg={3} xs={6}>
+              <Col lg={3} xs={6}>
                 <div className="circle_mother">
                   <div className="circle">
                     <CircularProgressbarWithChildren
@@ -282,12 +273,12 @@ const About_me = () => {
                     ></CircularProgressbarWithChildren>
                   </div>
                   <div className="center_text">
-                
+
                     <h2>GSAP</h2>
                   </div>
                 </div>
               </Col>
-               <Col lg={3} xs={6}>
+              <Col lg={3} xs={6}>
                 <div className="circle_mother">
                   <div className="circle">
                     <CircularProgressbarWithChildren
@@ -295,7 +286,7 @@ const About_me = () => {
                     ></CircularProgressbarWithChildren>
                   </div>
                   <div className="center_text">
-                
+
                     <h2>Framer Motion</h2>
                   </div>
                 </div>
@@ -308,7 +299,7 @@ const About_me = () => {
                     ></CircularProgressbarWithChildren>
                   </div>
                   <div className="center_text">
-                    
+
                     <h2>GitHub</h2>
                   </div>
                 </div>
@@ -321,7 +312,7 @@ const About_me = () => {
                     ></CircularProgressbarWithChildren>
                   </div>
                   <div className="center_text">
-                    
+
                     <h2>BitBucket</h2>
                   </div>
                 </div>
@@ -336,15 +327,14 @@ const About_me = () => {
           <Col>
             <Row>
               <Col lg={6}>
-                <div class="ex-item">
-                  <h4>2023 - PRESENT</h4>
+                <div className="ex-item">
+                  <h4>2024 - PRESENT</h4>
                   <h2>
-                    WEB DEVELOPER<span> - Creative IT</span>
+                    Front-End Developer<span> - Betopia Group</span>
                   </h2>
                   <p>
-                    At Creative IT Institute, pioneering avant-garde web
-                    solutions, fostering synergy, and mastering emerging
-                    technologies.
+                    Developing high-performance, responsive web applications using HTML, CSS, Tailwind, JavaScript, TypeScript, React.js, and Next.js.
+                    Collaborated with backend developers to integrate REST APIs, manage state, and implement real-time updates for dynamic applications.
                   </p>
                   <RiHomeOfficeLine className="icon" />
                 </div>
