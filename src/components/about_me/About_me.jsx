@@ -60,7 +60,7 @@ const About_me = () => {
                 <div class="about-left-right">
                   <ul>
                     <li>
-                      <p>Address:</p> <span>jatrabari,Dhaka</span>
+                      <p>Address:</p> <span>Mohakhali,Dhaka</span>
                     </li>
                     <li>
                       <p>Phone:</p>{" "}
@@ -77,7 +77,7 @@ const About_me = () => {
                       </span>
                     </li>
                     <li>
-                      <p>Linkedin:</p> <span>Sarkerfahim</span>
+                      <p>Linkedin:</p> <span>https://www.linkedin.com/in/fahim-sarker-089817312/</span>
                     </li>
                     <li>
                       <p>Languages:</p> <span>Bangla, English</span>
