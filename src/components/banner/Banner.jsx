@@ -33,12 +33,13 @@ const Banner = () => {
                 repeat={Infinity}
               />
               <p>
-                I'm a professional <b>Front-End Developer </b> and focused on
-                crafting clean & user‑friendly experiences. I am passionate
-                about building excellent web applications that improves the
-                lives of those around me. With expertise in Tailwind
-                CSS, React, React Native,Next JS & TypeScript. I bring innovative web solutions to life.
-                Let's build something great together!
+                I'm a professional <b>Front-End Developer</b> with 2 years of
+                experience building fast, responsive web applications. At
+                Softvence Agency, I co-lead the frontend team and turn ideas
+                into clean, user-friendly interfaces with React, Next.js,
+                TypeScript & Tailwind CSS. I also build mobile apps with React
+                Native and I'm currently learning Flutter. Let's build
+                something great together!
               </p>
               <a href="#">
                 <button>MORE ABOUT ME</button>

@@ -6,19 +6,39 @@ import { Container, Row, Col } from "react-bootstrap";
 import { FaGraduationCap, FaPenRuler, FaBullhorn } from "react-icons/fa6";
 import { CircularProgressbarWithChildren } from "react-circular-progressbar";
 
-const About_me = () => {
-  const stats = [
-    { value: 2.5, label: "Years of Experience" },
-    { value: 20, label: "Happy Customers" },
-    { value: 30, label: "Projects Done" },
-    { value: 3, label: "Awards Won" },
-  ];
+// Edit this list to add, remove or re-rate skills. Most important first.
+const skills = [
+  { name: "HTML", value: 85 },
+  { name: "CSS", value: 80 },
+  { name: "JavaScript", value: 65 },
+  { name: "TypeScript", value: 70 },
+  { name: "Tailwind CSS", value: 90 },
+  { name: "React JS", value: 70 },
+  { name: "Next JS", value: 70 },
+  { name: "React Native", value: 70 },
+  { name: "Redux", value: 70 },
+  { name: "TanStack Query", value: 70 },
+  { name: "REST API", value: 80 },
+  { name: "GSAP", value: 70 },
+  { name: "Framer Motion", value: 70 },
+  { name: "Storybook", value: 85 },
+  { name: "GitHub", value: 85 },
+  { name: "Flutter (Learning)", value: 30 },
+];
 
+const stats = [
+  { value: 2, label: "Years of Experience" },
+  { value: 20, label: "Happy Customers" },
+  { value: 30, label: "Projects Done" },
+  { value: 3, label: "Awards Won" },
+];
+
+const About_me = () => {
   return (
     <section id="about">
       <Container>
         <Row className="text-center">
-          <div class="about-head">
+          <div className="about-head">
             <h2>RESUME</h2>
             <h3>about</h3>
             <h4>me</h4>
@@ -27,11 +47,11 @@ const About_me = () => {
         <Row>
           <Col lg={6}>
             <Row>
-              <div class="all-head">
+              <div className="all-head">
                 <h2>PERSONAL INFOS</h2>
               </div>
               <Col lg={6}>
-                <div class="about-left-left">
+                <div className="about-left-left">
                   <ul>
                     <li>
                       <p>First Name:</p> <span>fahim</span>
@@ -51,13 +71,13 @@ const About_me = () => {
                   </ul>
                   <a href={CV} download>
                     <button>
-                      Download cv <i class="fa-solid fa-cloud-arrow-down"></i>
+                      Download cv <i className="fa-solid fa-cloud-arrow-down"></i>
                     </button>
                   </a>
                 </div>
               </Col>
               <Col lg={6}>
-                <div class="about-left-right">
+                <div className="about-left-right">
                   <ul>
                     <li>
                       <p>Address:</p> <span>Mohakhali,Dhaka</span>
@@ -65,22 +85,28 @@ const About_me = () => {
                     <li>
                       <p>Phone:</p>{" "}
                       <span>
-                        <a href="tel:+8801609302239">+880 1647389997</a>
+                        <a href="tel:+8801647389997">+880 1647389997</a>
                       </span>
                     </li>
                     <li>
                       <p>Email:</p>{" "}
                       <span>
                         <a href="mailto:sarkerfahim599@gmail.com">
-                          sarker@gmail.com
+                          sarkerfahim599@gmail.com
                         </a>
                       </span>
                     </li>
                     <li>
-                      <p>Linkedin:</p> <span>https://www.linkedin.com/in/fahim-sarker-089817312/</span>
-                    </li>
-                    <li>
-                      <p>Languages:</p> <span>Bangla, English</span>
+                      <p>Linkedin:</p>
+                      <span>
+                        <a
+                          href="https://www.linkedin.com/in/fahim-sarker-089817312/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          https://www.linkedin.com/in/fahim-sarker-089817312/
+                        </a>
+                      </span>
                     </li>
                   </ul>
                 </div>
@@ -104,224 +130,29 @@ const About_me = () => {
         </Row>
 
         <Row>
-          <div class="skill-head">
+          <div className="skill-head">
             <h2>My Skills</h2>
           </div>
           <Col>
             <Row>
-              <Col lg={3} xs={6}>
-                <div className="circle_mother">
-                  <div className="circle">
-                    <CircularProgressbarWithChildren
-                      value={85}
-                    ></CircularProgressbarWithChildren>
+              {skills.map((skill) => (
+                <Col lg={3} xs={6} key={skill.name}>
+                  <div className="circle_mother">
+                    <div className="circle">
+                      <CircularProgressbarWithChildren value={skill.value} />
+                    </div>
+                    <div className="center_text">
+                      <h2>{skill.name}</h2>
+                    </div>
                   </div>
-                  <div className="center_text">
-
-                    <h2>HTML</h2>
-                  </div>
-                </div>
-              </Col>
-              <Col lg={3} xs={6}>
-                <div className="circle_mother">
-                  <div className="circle">
-                    <CircularProgressbarWithChildren
-                      value={80}
-                    ></CircularProgressbarWithChildren>
-                  </div>
-                  <div className="center_text">
-
-                    <h2>CSS</h2>
-                  </div>
-                </div>
-              </Col>
-              <Col lg={3} xs={6}>
-                <div className="circle_mother">
-                  <div className="circle">
-                    <CircularProgressbarWithChildren
-                      value={65}
-                    ></CircularProgressbarWithChildren>
-                  </div>
-                  <div className="center_text">
-
-                    <h2>Javascript</h2>
-                  </div>
-                </div>
-              </Col>
-              <Col lg={3} xs={6}>
-                <div className="circle_mother">
-                  <div className="circle">
-                    <CircularProgressbarWithChildren
-                      value={90}
-                    ></CircularProgressbarWithChildren>
-                  </div>
-                  <div className="center_text">
-
-                    <h2>Bootstrap</h2>
-                  </div>
-                </div>
-              </Col>
-              <Col lg={3} xs={6}>
-                <div className="circle_mother">
-                  <div className="circle">
-                    <CircularProgressbarWithChildren
-                      value={90}
-                    ></CircularProgressbarWithChildren>
-                  </div>
-                  <div className="center_text">
-
-                    <h2>Tailwind CSS</h2>
-                  </div>
-                </div>
-              </Col>
-              <Col lg={3} xs={6}>
-                <div className="circle_mother">
-                  <div className="circle">
-                    <CircularProgressbarWithChildren
-                      value={70}
-                    ></CircularProgressbarWithChildren>
-                  </div>
-                  <div className="center_text">
-
-                    <h2>React JS</h2>
-                  </div>
-                </div>
-              </Col>
-              <Col lg={3} xs={6}>
-                <div className="circle_mother">
-                  <div className="circle">
-                    <CircularProgressbarWithChildren
-                      value={70}
-                    ></CircularProgressbarWithChildren>
-                  </div>
-                  <div className="center_text">
-
-                    <h2>React Native</h2>
-                  </div>
-                </div>
-              </Col>
-              <Col lg={3} xs={6}>
-                <div className="circle_mother">
-                  <div className="circle">
-                    <CircularProgressbarWithChildren
-                      value={70}
-                    ></CircularProgressbarWithChildren>
-                  </div>
-                  <div className="center_text">
-
-                    <h2>NEXT JS</h2>
-                  </div>
-                </div>
-              </Col>
-              <Col lg={3} xs={6}>
-                <div className="circle_mother">
-                  <div className="circle">
-                    <CircularProgressbarWithChildren
-                      value={70}
-                    ></CircularProgressbarWithChildren>
-                  </div>
-                  <div className="center_text">
-
-                    <h2>Redux</h2>
-                  </div>
-                </div>
-              </Col>
-              <Col lg={3} xs={6}>
-                <div className="circle_mother">
-                  <div className="circle">
-                    <CircularProgressbarWithChildren
-                      value={70}
-                    ></CircularProgressbarWithChildren>
-                  </div>
-                  <div className="center_text">
-
-                    <h2>React Query</h2>
-                  </div>
-                </div>
-              </Col>
-              <Col lg={3} xs={6}>
-                <div className="circle_mother">
-                  <div className="circle">
-                    <CircularProgressbarWithChildren
-                      value={70}
-                    ></CircularProgressbarWithChildren>
-                  </div>
-                  <div className="center_text">
-
-                    <h2>TanStack Query</h2>
-                  </div>
-                </div>
-              </Col>
-              <Col lg={3} xs={6}>
-                <div className="circle_mother">
-                  <div className="circle">
-                    <CircularProgressbarWithChildren
-                      value={70}
-                    ></CircularProgressbarWithChildren>
-                  </div>
-                  <div className="center_text">
-
-                    <h2>Shadcn</h2>
-                  </div>
-                </div>
-              </Col>
-              <Col lg={3} xs={6}>
-                <div className="circle_mother">
-                  <div className="circle">
-                    <CircularProgressbarWithChildren
-                      value={70}
-                    ></CircularProgressbarWithChildren>
-                  </div>
-                  <div className="center_text">
-
-                    <h2>GSAP</h2>
-                  </div>
-                </div>
-              </Col>
-              <Col lg={3} xs={6}>
-                <div className="circle_mother">
-                  <div className="circle">
-                    <CircularProgressbarWithChildren
-                      value={70}
-                    ></CircularProgressbarWithChildren>
-                  </div>
-                  <div className="center_text">
-
-                    <h2>Framer Motion</h2>
-                  </div>
-                </div>
-              </Col>
-              <Col lg={3} xs={6}>
-                <div className="circle_mother">
-                  <div className="circle">
-                    <CircularProgressbarWithChildren
-                      value={85}
-                    ></CircularProgressbarWithChildren>
-                  </div>
-                  <div className="center_text">
-
-                    <h2>GitHub</h2>
-                  </div>
-                </div>
-              </Col>
-              <Col lg={3} xs={6}>
-                <div className="circle_mother">
-                  <div className="circle">
-                    <CircularProgressbarWithChildren
-                      value={85}
-                    ></CircularProgressbarWithChildren>
-                  </div>
-                  <div className="center_text">
-
-                    <h2>BitBucket</h2>
-                  </div>
-                </div>
-              </Col>
+                </Col>
+              ))}
             </Row>
           </Col>
         </Row>
+
         <Row>
-          <div class="ex-head">
+          <div className="ex-head">
             <h2>Experiences & Education</h2>
           </div>
           <Col>
@@ -330,17 +161,20 @@ const About_me = () => {
                 <div className="ex-item">
                   <h4>2024 - PRESENT</h4>
                   <h2>
-                    Front-End Developer<span> - Betopia Group</span>
+                    Front-End Developer<span> - Softvence Agency</span>
                   </h2>
                   <p>
-                    Developing high-performance, responsive web applications using HTML, CSS, Tailwind, JavaScript, TypeScript, React.js, and Next.js.
-                    Collaborated with backend developers to integrate REST APIs, manage state, and implement real-time updates for dynamic applications.
+                    Developing high-performance, responsive web applications
+                    using HTML, CSS, Tailwind, JavaScript, TypeScript, React.js,
+                    and Next.js. Collaborated with backend developers to
+                    integrate REST APIs, manage state, and implement real-time
+                    updates for dynamic applications.
                   </p>
                   <RiHomeOfficeLine className="icon" />
                 </div>
               </Col>
               <Col lg={6}>
-                <div class="ex-item">
+                <div className="ex-item">
                   <h4>2023 - 2024</h4>
                   <h2>
                     Frontend Developement<span> - creative it</span>
@@ -354,7 +188,7 @@ const About_me = () => {
                 </div>
               </Col>
               <Col lg={6}>
-                <div class="ex-item">
+                <div className="ex-item">
                   <h4>2023 - PRESENT</h4>
                   <h2>
                     Front-End Developer<span> - Upwork</span>
@@ -367,7 +201,7 @@ const About_me = () => {
                 </div>
               </Col>
               <Col lg={6}>
-                <div class="ex-item">
+                <div className="ex-item">
                   <h4>2020 - 2021</h4>
                   <h2>
                     Higher Secondary<span>-M.W</span>
@@ -380,7 +214,7 @@ const About_me = () => {
                 </div>
               </Col>
               <Col lg={6}>
-                <div class="ex-item">
+                <div className="ex-item">
                   <h4>2022 - 2022</h4>
                   <h2>
                     Front-End DEVELOPER<span> - Fiverr</span>
@@ -393,7 +227,7 @@ const About_me = () => {
                 </div>
               </Col>
               <Col lg={6}>
-                <div class="ex-item">
+                <div className="ex-item">
                   <h4>2018 - 2019</h4>
                   <h2>
                     Secondary<span> - M.A.H.S</span>
