@@ -1,20 +1,16 @@
-import React from 'react'
-import "./servicereusable.css"
-import { Col } from 'react-bootstrap'
+import "./servicereusable.css";
+import { Col } from "react-bootstrap";
 
-const Servicereusable = (props) => {
+const Servicereusable = ({ icon, title, para }) => {
   return (
-    <>
-        <Col lg={4}>
-            <div className="service-item">
-                {/* <img src={props.sampleimg} alt="" /> */}
-                <h2>{props.title}</h2>
-                <p>{props.para}</p>
-                {/* <a href="#">Take This Service</a> */}
-            </div>
-        </Col>
-    </>
-  )
-}
+    <Col lg={4} md={6} xs={12}>
+      <div className="service-item">
+        {icon && <div className="service-icon">{icon}</div>}
+        <h2>{title}</h2>
+        <p>{para}</p>
+      </div>
+    </Col>
+  );
+};
 
-export default Servicereusable
+export default Servicereusable;

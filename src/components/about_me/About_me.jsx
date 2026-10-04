@@ -1,29 +1,45 @@
 import "./about_me.css";
 import CountUp from "react-countup";
 import CV from "../../assets/cv.pdf";
-import { RiHomeOfficeLine } from "react-icons/ri";
 import { Container, Row, Col } from "react-bootstrap";
-import { FaGraduationCap, FaPenRuler, FaBullhorn } from "react-icons/fa6";
+import { RiHomeOfficeLine } from "react-icons/ri";
+import {
+  FaGraduationCap,
+  FaPenRuler,
+  FaBullhorn,
+  FaCloudArrowDown,
+} from "react-icons/fa6";
 import { CircularProgressbarWithChildren } from "react-circular-progressbar";
+import "react-circular-progressbar/dist/styles.css";
 
-// Edit this list to add, remove or re-rate skills. Most important first.
-const skills = [
-  { name: "HTML", value: 85 },
-  { name: "CSS", value: 80 },
-  { name: "JavaScript", value: 65 },
-  { name: "TypeScript", value: 70 },
-  { name: "Tailwind CSS", value: 90 },
-  { name: "React JS", value: 70 },
-  { name: "Next JS", value: 70 },
-  { name: "React Native", value: 70 },
-  { name: "Redux", value: 70 },
-  { name: "TanStack Query", value: 70 },
-  { name: "REST API", value: 80 },
-  { name: "GSAP", value: 70 },
-  { name: "Framer Motion", value: 70 },
-  { name: "Storybook", value: 85 },
-  { name: "GitHub", value: 85 },
-  { name: "Flutter (Learning)", value: 30 },
+/* ---------- Data: edit these to update the section ---------- */
+
+const personalLeft = [
+  { label: "First Name", value: "Fahim" },
+  { label: "Last Name", value: "Sarker" },
+  { label: "Age", value: "22 Years" },
+  { label: "Nationality", value: "Bangladeshi" },
+  { label: "Freelance", value: "Available" },
+];
+
+const personalRight = [
+  { label: "Address", value: "Mohakhali, Dhaka" },
+  {
+    label: "Phone",
+    value: "+880 1647389997",
+    href: "tel:+8801647389997",
+  },
+  {
+    label: "Email",
+    value: "sarkerfahim599@gmail.com",
+    href: "mailto:sarkerfahim599@gmail.com",
+  },
+  {
+    label: "LinkedIn",
+    value: "linkedin.com/in/fahim-sarker",
+    href: "https://www.linkedin.com/in/fahim-sarker-089817312/",
+    external: true,
+  },
 ];
 
 const stats = [
@@ -33,93 +49,153 @@ const stats = [
   { value: 3, label: "Awards Won" },
 ];
 
+// Each level controls how full the circle is
+const LEVELS = {
+  Advanced: 90,
+  Proficient: 75,
+  Intermediate: 60,
+  Learning: 30,
+};
+
+const skills = [
+  { name: "HTML", level: "Advanced" },
+  { name: "CSS", level: "Advanced" },
+  { name: "Tailwind CSS", level: "Advanced" },
+  { name: "JavaScript", level: "Proficient" },
+  { name: "TypeScript", level: "Proficient" },
+  { name: "React JS", level: "Proficient" },
+  { name: "Next JS", level: "Proficient" },
+  { name: "React Native", level: "Proficient" },
+  { name: "Redux", level: "Proficient" },
+  { name: "TanStack Query", level: "Proficient" },
+  { name: "REST API", level: "Proficient" },
+  { name: "GSAP", level: "Intermediate" },
+  { name: "Framer Motion", level: "Intermediate" },
+  { name: "Storybook", level: "Intermediate" },
+  { name: "GitHub", level: "Proficient" },
+  { name: "Flutter", level: "Learning" },
+];
+
+const timeline = [
+  {
+    period: "2024 - Present",
+    title: "Front-End Developer (Full Time)",
+    place: "Softvence Agency",
+    text: "Building high-performance, responsive web apps with React, Next.js, TypeScript and Tailwind CSS. Working closely with backend developers to integrate REST APIs, manage state and ship real-time features.",
+    Icon: RiHomeOfficeLine,
+  },
+  {
+    period: "2023 - Present",
+    title: "Front-End Developer",
+    place: "Upwork",
+    text: "Delivering modern, pixel-perfect websites and web apps for international clients, from idea to deployment.",
+    Icon: FaPenRuler,
+  },
+  {
+    period: "2023 - 2024",
+    title: "Front-End Development",
+    place: "Creative IT Institute",
+    text: "Graduated from Creative IT Institute with distinction in web development, finishing with top honors.",
+    Icon: FaGraduationCap,
+  },
+  {
+    period: "2022 - Ongoing",
+    title: "Bachelor of Business Administration (BBA)",
+    place: "National University",
+    text: "Currently pursuing a BBA at National University, building a strong foundation in management, marketing and business strategy alongside my development career.",
+    Icon: FaGraduationCap,
+  },
+  {
+    period: "2022",
+    title: "Front-End Developer",
+    place: "Fiverr",
+    text: "Built custom web solutions for clients around the world, sharpening my versatility and client communication.",
+    Icon: FaBullhorn,
+  },
+  {
+    period: "2020 - 2021",
+    title: "Higher Secondary",
+    place: "Adamjinagar M.W College",
+    text: "Completed Higher Secondary with a GPA of 4.25, reflecting consistent academic dedication.",
+    Icon: FaGraduationCap,
+  },
+];
+
+/* ---------- Small helper for info rows ---------- */
+
+const InfoList = ({ items }) => (
+  <ul className="info-list">
+    {items.map(({ label, value, href, external }) => (
+      <li key={label}>
+        <p>{label}:</p>
+        {href ? (
+          <span>
+            <a
+              href={href}
+              {...(external && {
+                target: "_blank",
+                rel: "noopener noreferrer",
+              })}
+            >
+              {value}
+            </a>
+          </span>
+        ) : (
+          <span>{value}</span>
+        )}
+      </li>
+    ))}
+  </ul>
+);
+
+/* ---------- Component ---------- */
+
 const About_me = () => {
   return (
     <section id="about">
       <Container>
         <Row className="text-center">
           <div className="about-head">
-            <h2>RESUME</h2>
-            <h3>about</h3>
-            <h4>me</h4>
+            <h2>Resume</h2>
+            <h3>About</h3>
+            <h4>Me</h4>
           </div>
         </Row>
+
+        {/* Personal info + stats */}
         <Row>
           <Col lg={6}>
             <Row>
               <div className="all-head">
-                <h2>PERSONAL INFOS</h2>
+                <h2>Personal Infos</h2>
               </div>
               <Col lg={6}>
-                <div className="about-left-left">
-                  <ul>
-                    <li>
-                      <p>First Name:</p> <span>fahim</span>
-                    </li>
-                    <li>
-                      <p>Last Name:</p> <span>Sarker</span>
-                    </li>
-                    <li>
-                      <p>Age:</p> <span>22 Years</span>
-                    </li>
-                    <li>
-                      <p>Nationality:</p> <span>Bangladeshi</span>
-                    </li>
-                    <li>
-                      <p>Freelance:</p> <span>Available</span>
-                    </li>
-                  </ul>
-                  <a href={CV} download>
-                    <button>
-                      Download cv <i className="fa-solid fa-cloud-arrow-down"></i>
-                    </button>
-                  </a>
-                </div>
+                <InfoList items={personalLeft} />
+                <a href={CV} download className="cv-link">
+                  <button className="cv-btn">
+                    Download CV <FaCloudArrowDown />
+                  </button>
+                </a>
               </Col>
               <Col lg={6}>
-                <div className="about-left-right">
-                  <ul>
-                    <li>
-                      <p>Address:</p> <span>Mohakhali,Dhaka</span>
-                    </li>
-                    <li>
-                      <p>Phone:</p>{" "}
-                      <span>
-                        <a href="tel:+8801647389997">+880 1647389997</a>
-                      </span>
-                    </li>
-                    <li>
-                      <p>Email:</p>{" "}
-                      <span>
-                        <a href="mailto:sarkerfahim599@gmail.com">
-                          sarkerfahim599@gmail.com
-                        </a>
-                      </span>
-                    </li>
-                    <li>
-                      <p>Linkedin:</p>
-                      <span>
-                        <a
-                          href="https://www.linkedin.com/in/fahim-sarker-089817312/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          https://www.linkedin.com/in/fahim-sarker-089817312/
-                        </a>
-                      </span>
-                    </li>
-                  </ul>
-                </div>
+                <InfoList items={personalRight} />
               </Col>
             </Row>
           </Col>
+
           <Col lg={6}>
             <Row>
-              {stats.map((stat, index) => (
-                <Col lg={6} key={index}>
+              {stats.map((stat) => (
+                <Col lg={6} xs={6} key={stat.label}>
                   <div className="about-right">
                     <h2>
-                      <CountUp end={stat.value} duration={3} />+
+                      <CountUp
+                        end={stat.value}
+                        duration={3}
+                        enableScrollSpy
+                        scrollSpyOnce
+                      />
+                      +
                     </h2>
                     <h3>{stat.label}</h3>
                   </div>
@@ -129,119 +205,46 @@ const About_me = () => {
           </Col>
         </Row>
 
+        {/* Skills */}
         <Row>
           <div className="skill-head">
             <h2>My Skills</h2>
           </div>
-          <Col>
-            <Row>
-              {skills.map((skill) => (
-                <Col lg={3} xs={6} key={skill.name}>
-                  <div className="circle_mother">
-                    <div className="circle">
-                      <CircularProgressbarWithChildren value={skill.value} />
-                    </div>
-                    <div className="center_text">
-                      <h2>{skill.name}</h2>
-                    </div>
-                  </div>
-                </Col>
-              ))}
-            </Row>
-          </Col>
+          {skills.map((skill) => (
+            <Col lg={3} xs={6} key={skill.name}>
+              <div className="circle_mother">
+                <div className="circle">
+                  <CircularProgressbarWithChildren
+                    value={LEVELS[skill.level]}
+                  />
+                </div>
+                <div className="center_text">
+                  <h2>{skill.name}</h2>
+                  <span>{skill.level}</span>
+                </div>
+              </div>
+            </Col>
+          ))}
         </Row>
 
+        {/* Experience & education */}
         <Row>
           <div className="ex-head">
             <h2>Experiences & Education</h2>
           </div>
-          <Col>
-            <Row>
-              <Col lg={6}>
-                <div className="ex-item">
-                  <h4>2024 - PRESENT</h4>
-                  <h2>
-                    Front-End Developer<span> - Softvence Agency</span>
-                  </h2>
-                  <p>
-                    Developing high-performance, responsive web applications
-                    using HTML, CSS, Tailwind, JavaScript, TypeScript, React.js,
-                    and Next.js. Collaborated with backend developers to
-                    integrate REST APIs, manage state, and implement real-time
-                    updates for dynamic applications.
-                  </p>
-                  <RiHomeOfficeLine className="icon" />
-                </div>
-              </Col>
-              <Col lg={6}>
-                <div className="ex-item">
-                  <h4>2023 - 2024</h4>
-                  <h2>
-                    Frontend Developement<span> - creative it</span>
-                  </h2>
-                  <p>
-                    Development graduate from Creative IT Institute, achieving
-                    excellence and distinction in web development with top
-                    honors.
-                  </p>
-                  <FaGraduationCap className="icon" />
-                </div>
-              </Col>
-              <Col lg={6}>
-                <div className="ex-item">
-                  <h4>2023 - PRESENT</h4>
-                  <h2>
-                    Front-End Developer<span> - Upwork</span>
-                  </h2>
-                  <p>
-                    On Fiverr: Navigating dynamic challenges, coding innovation,
-                    and sculpting digital landscapes as a full-stack virtuoso.
-                  </p>
-                  <FaPenRuler className="icon" />
-                </div>
-              </Col>
-              <Col lg={6}>
-                <div className="ex-item">
-                  <h4>2020 - 2021</h4>
-                  <h2>
-                    Higher Secondary<span>-M.W</span>
-                  </h2>
-                  <p>
-                    Higher Secondary Graduate from Adomjinogor M.W College,
-                    achieving GPA-4.25, demonstrating academic excellence.
-                  </p>
-                  <FaGraduationCap className="icon" />
-                </div>
-              </Col>
-              <Col lg={6}>
-                <div className="ex-item">
-                  <h4>2022 - 2022</h4>
-                  <h2>
-                    Front-End DEVELOPER<span> - Fiverr</span>
-                  </h2>
-                  <p>
-                    Fiverr front-end dev: Customized web solutions for diverse
-                    clients worldwide, honing versatility and client rapport.
-                  </p>
-                  <FaBullhorn className="icon" />
-                </div>
-              </Col>
-              <Col lg={6}>
-                <div className="ex-item">
-                  <h4>2018 - 2019</h4>
-                  <h2>
-                    Secondary<span> - M.A.H.S</span>
-                  </h2>
-                  <p>
-                    Secondary School graduate from Mathabhanga Adarsha High
-                    School with perfect GPA 3.44, showcasing academic excellence
-                    and dedication.
-                  </p>
-                  <FaGraduationCap className="icon" />
-                </div>
-              </Col>
-            </Row>
-          </Col>
+          {timeline.map(({ period, title, place, text, Icon }) => (
+            <Col lg={6} key={`${period}-${place}`}>
+              <div className="ex-item">
+                <h4>{period}</h4>
+                <h2>
+                  {title}
+                  <span> - {place}</span>
+                </h2>
+                <p>{text}</p>
+                <Icon className="icon" />
+              </div>
+            </Col>
+          ))}
         </Row>
       </Container>
     </section>

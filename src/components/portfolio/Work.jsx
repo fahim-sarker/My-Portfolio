@@ -1,36 +1,176 @@
 import "./work.css";
+import { Tabs, Tab, Container, Row } from "react-bootstrap";
+import Workreusable from "../workreusable/Workreusable";
+
 import Ten from "../../assets/fistech.png";
 import Bar from "../../assets/native.png";
-import "slick-carousel/slick/slick.css";
 import Port9 from "../../assets/vue.png";
-import Todo from "../../assets/jack.jpeg"
-import Flip from "../../assets/image.png"
+import Todo from "../../assets/jack.jpeg";
+import Flip from "../../assets/image.png";
 import Port2 from "../../assets/gym1.png";
 import Port3 from "../../assets/home.jpg";
 import Hekto from "../../assets/nexbazar.png";
 import Port1 from "../../assets/port1.png";
 import Quiz1 from "../../assets/three.jpeg";
-import Block from "../../assets/block.jpeg"
-import Parti from "../../assets/parti.jpeg"
-import { Tabs, Tab } from "react-bootstrap";
-import "slick-carousel/slick/slick-theme.css";
+import Block from "../../assets/block.jpeg";
+import Parti from "../../assets/parti.jpeg";
 import Project2 from "../../assets/destiny.png";
 import Viridian from "../../assets/model.jpeg";
 import Project3 from "../../assets/drinks.png";
-import { Container, Row } from "react-bootstrap";
-import Workreusable from "../workreusable/Workreusable";
+
+const categories = [
+  {
+    key: "challenges",
+    title: "Challenges",
+    projects: [
+      {
+        image: Block,
+        title: "Block Graph",
+        content:
+          "A React app for building and manipulating a tree of draggable nodes with a smooth, intuitive canvas.",
+        github: "https://github.com/fahim-sarker/Block_Graph",
+        livesite: "https://myblock-graph.netlify.app/",
+      },
+      {
+        image: Parti,
+        title: "Recursive Partitioner",
+        content:
+          "Start with one randomly colored pane and split it endlessly, horizontally or vertically, into resizable sections.",
+        github: "https://github.com/fahim-sarker/Recursive-Partitioner",
+        livesite: "https://sweet-syrniki-564999.netlify.app/",
+      },
+      {
+        image: Viridian,
+        title: "Scroll Frame Animation",
+        content:
+          "A buttery-smooth scroll experience where animation frames change dynamically as you scroll.",
+        github: "https://github.com/fahim-sarker/Three-JS-Portfolio", // TODO: check, same repo as Three JS Portfolio
+        livesite: "https://cheerful-rolypoly-7866d2.netlify.app/",
+      },
+    ],
+  },
+  {
+    key: "react",
+    title: "React & React Native",
+    projects: [
+      {
+        image: Port3,
+        title: "SMS Home",
+        content:
+          "A service marketplace connecting customers with trained, background-verified experts across Dubai and Abu Dhabi.",
+        github: "https://bitbucket.org/lyans-creative/sms_home_admin_website/",
+        livesite: "https://smshome.ae/",
+      },
+      {
+        image: Bar,
+        title: "Lafyuu E-commerce",
+        content:
+          "A cross-platform e-commerce app built with React Native, optimized for both Android and iOS.",
+        github: "https://github.com/fahim-sarker/Lafyuu-Ecommerce-Native-App",
+      },
+      {
+        image: Project2,
+        title: "Daily Destiny",
+        content:
+          "A fast, responsive news and TV channel website covering national and international headlines.",
+        github: "https://github.com/fistech-ventures/daily-destiny-web",
+        livesite: "https://dailydestinybd.com/bn",
+      },
+    ],
+  },
+  {
+    key: "nextjs",
+    title: "Next JS",
+    projects: [
+      {
+        image: Flip,
+        title: "Sustainable Trades",
+        content:
+          "A dynamic multi-vendor marketplace that brings sellers and buyers together in one seamless platform.",
+        github: "https://github.com/fahim-sarker/melissabooth-123-next-js",
+        livesite: "https://sustainable-trades.vercel.app/",
+      },
+      {
+        image: Hekto,
+        title: "NexBazar",
+        content:
+          "A fully responsive e-commerce website built with Next.js, polished for every screen size.",
+        github: "https://github.com/fistech-ventures/amorubi-ecommerce",
+        livesite: "https://www.nexbazarbd.com/",
+      },
+      {
+        image: Ten,
+        title: "Fistech",
+        content:
+          "A modern, responsive agency website with a clean UI and attention to frontend detail.",
+        github: "https://github.com/fistech-ventures/fistech-web",
+        livesite: "https://fistech.org",
+      },
+    ],
+  },
+  {
+    key: "creative",
+    title: "GSAP & Three JS",
+    projects: [
+      {
+        image: Project3,
+        title: "SPYLT Drinks",
+        content:
+          "An interactive drinks website powered by GSAP, packed with scroll-driven and visually rich animations.",
+        github: "https://github.com/fahim-sarker/SPYLT-GSAP",
+        livesite: "https://spylt-gsap.netlify.app/",
+      },
+      {
+        image: Quiz1,
+        title: "Three JS Portfolio",
+        content:
+          "An immersive 3D portfolio built with Three.js, featuring animated models and smooth interactions.",
+        github: "https://github.com/fahim-sarker/Three-JS-Portfolio",
+        livesite: "https://mythreejsportfolio.netlify.app/",
+      },
+      {
+        image: Todo,
+        title: "Car Showcase",
+        content:
+          "A cinematic car showcase using GSAP to move between models with fluid transitions.",
+        github: "https://github.com/fahim-sarker/JACK-GSAP",
+        livesite: "https://jack-gsap.netlify.app/",
+      },
+    ],
+  },
+  {
+    key: "design",
+    title: "Web Design & Vue Js",
+    projects: [
+      {
+        image: Port2,
+        title: "Fitness Gym",
+        content:
+          "A modern, responsive gym website with a clean, energetic UI.",
+        github: "https://github.com/fahim-sarker/My-Projecct",
+        livesite: "https://galaxy-gym.netlify.app/",
+      },
+      {
+        image: Port9,
+        title: "Vue Js Project",
+        content:
+          "A Vue.js web application showcasing interactive, component-driven interfaces.",
+        github: "https://github.com/fahim-sarker/Vue-JS",
+        livesite: "https://myvuejsproject.netlify.app/",
+      },
+      {
+        image: Port1,
+        title: "Finsweet Multipage",
+        content:
+          "A 12-page agency website built with Bootstrap and fully responsive across devices.",
+        github: "https://github.com/fahim-sarker/multipage",
+        livesite: "https://enchanting-cascaron-c7198f.netlify.app/",
+      },
+    ],
+  },
+];
 
 const Work = () => {
-  var settings = {
-    infinite: true,
-    arrows: false,
-    dots: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 4000,
-  };
   return (
     <section id="work">
       <Container>
@@ -41,173 +181,20 @@ const Work = () => {
             <h4>Portfolio</h4>
           </div>
         </Row>
+
         <Row className="text-center flex">
-          <Tabs defaultActiveKey="Chanllenges" className="mb-4 list11">
-            <Tab eventKey="Chanllenges" title="Challenges">
-              <Row>
-                <Workreusable
-                  image={Block}
-                  title="Block Graph"
-                  content="A simple React application that allows users to create and manipulate a tree of draggable nodes."
-                  github="https://github.com/fahim-sarker/Block_Graph"
-                  livesite="https://myblock-graph.netlify.app/"
-                />
-                <Workreusable
-                  image={Parti}
-                  title="Recursive Partitioner"
-                  content="This application Users can start with a single randomly colored pane and dynamically split it into multiple resizable horizontally or vertically."
-                  github="https://github.com/fahim-sarker/Recursive-Partitioner"
-                  livesite="https://sweet-syrniki-564999.netlify.app/"
-                />
-
-                <Workreusable
-                  image={Viridian}
-                  title="Scroll Frame Animation"
-                  content="A smooth and interactive scroll animation project where frames change dynamically as users scroll."
-                  github="https://github.com/fahim-sarker/Three-JS-Portfolio"
-                  livesite="https://cheerful-rolypoly-7866d2.netlify.app/"
-                />
-
-              </Row>
-            </Tab>
-            <Tab eventKey="education" title="React & React Native">
-              <Row>
-                <Workreusable
-                  image={Port3}
-                  title="Sms Home Website"
-                  content="
-                  SMS Home connects you with reliable, trained, and background-verified service experts across Dubai and Abu Dhabi."
-                  github="https://bitbucket.org/lyans-creative/sms_home_admin_website/"
-                  livesite="https://smshome.ae/"
-                />
-                <Workreusable
-                  image={Bar}
-                  title="Lafyuu Ecommerce"
-                  content="The App build with React Native for a Ecommerce Platform.This App is optimized for android & ios"
-                  github="https://github.com/fahim-sarker/Lafyuu-Ecommerce-Native-App"
-                  // livesite="https://expo.dev/accounts/fahim_sarker/projects/lafyuecommerce/builds/4cbf3891-9dda-4a15-9481-ab3746661734"
-                />
-                <Workreusable
-                  image={Project2}
-                  title="Daily Destiny"
-                  content="A responsive and user-focused website built for a News & Tv Chanel, showcasing National,International News."
-                  github="https://github.com/fistech-ventures/daily-destiny-web"
-                livesite="https://dailydestinybd.com/bn"
-                />
-              </Row>
-            </Tab>
-            <Tab eventKey="Next JS" title="Next JS">
-              <Row>
-                <Workreusable
-                  image={Flip}
-                  title="Sustainable Trades"
-                  content="A dynamic multi-vendor eCommerce platform that connects sellers and buyers in one seamless marketplace."
-                  github="https://github.com/fahim-sarker/melissabooth-123-next-js/settings"
-                  livesite="https://sustainable-trades.vercel.app/"
-                />
-
-
-                <Workreusable
-                  image={Hekto}
-                  title="NexBazar"
-                  content="NexBazar is a Eccomerce website that is build with Next Js and fully responsive across all of devices."
-                  github="https://github.com/fistech-ventures/amorubi-ecommerce"
-                  livesite="https://www.nexbazarbd.com/"
-                />
-
-                <Workreusable
-                  image={Ten}
-                  title="Fistech"
-                  content="This is a modern, responsive website for Fistech Agency. The project showcases
-                   my frontend development skills with a clean UI."
-                  github="https://github.com/fistech-ventures/fistech-web"
-                  livesite="https://fistech.org"
-                />
-
-
-
-              </Row>
-            </Tab>
-
-
-            <Tab eventKey="business" title="GSAP & Three JS">
-              <Row>
-                <Workreusable
-                  image={Project3}
-                  title="Drinks Website Made with GSAP"
-                  content="This project is a Drinks Website made with GSAP, showcasing my skills in creating interactive and visually appealing web experiences."
-                  github="https://github.com/fahim-sarker/SPYLT-GSAP"
-                  livesite="https://spylt-gsap.netlify.app/"
-                />
-                <Workreusable
-                  image={Quiz1}
-                  title="Three JS Portfolio"
-                  content="An interactive 3D portfolio website built with Three.js, showcasing creative animations, models, and smooth user interactions."
-                  github="https://github.com/fahim-sarker/Three-JS-Portfolio"
-                  livesite="https://mythreejsportfolio.netlify.app/"
-                />
-
-                <Workreusable
-                  image={Todo}
-                  title="Car Showcase Website"
-                  content="A visually engaging car showcase website built with GSAP animations, highlighting different car models with smooth transitions."
-                  github="https://github.com/fahim-sarker/JACK-GSAP"
-                  livesite="https://jack-gsap.netlify.app/"
-                />
-
-              </Row>
-            </Tab>
-
-            <Tab eventKey="newspaper" title="Web Design & Vue Js">
-              <Row>
-                <Workreusable
-                  image={Port2}
-                  title="Fitness Gym"
-                  content="This is a modern, responsive website designed for a fitness gym. The project showcases my frontend development skills with a clean UI."
-                  github="https://github.com/fahim-sarker/My-Projecct"
-                  livesite="https://galaxy-gym.netlify.app/"
-                />
-                <Workreusable
-                  image={Port9}
-                  title="Vue Js Project"
-                  content="This project is a Vue.js-based web application that demonstrates
-                   my skills in building interactive user interfaces using Vue.js."
-                  github="https://github.com/fahim-sarker/Vue-JS"
-                  livesite="https://myvuejsproject.netlify.app/"
-                />
-                <Workreusable
-                  image={Port1}
-                  title="Finsweet Multipage"
-                  content="Finsweet Agency's website contains 12 pages built with Bootstrap. Responsive designed to work smoothly on different devices I"
-                  github="https://github.com/fahim-sarker/multipage"
-                  livesite="https://enchanting-cascaron-c7198f.netlify.app/"
-                />
-              </Row>
-            </Tab>
+          <Tabs defaultActiveKey={categories[0].key} className="mb-4 list11">
+            {categories.map((cat) => (
+              <Tab key={cat.key} eventKey={cat.key} title={cat.title}>
+                <Row>
+                  {cat.projects.map((p) => (
+                    <Workreusable key={p.title} {...p} />
+                  ))}
+                </Row>
+              </Tab>
+            ))}
           </Tabs>
         </Row>
-        {/* <Row>
-          <div className="review">
-            <div className="review-head text-center">
-              <h2>Testimonials</h2>
-            </div>
-            <Slider {...settings}>
-              <Reviewreusable
-                img={RazibSir}
-                name="Razibur Rahman"
-                designation="Sr Faculty, Creative IT Institute"
-                company="Creative IT Institute"
-                comment="He completed the course with great skill and dedication. I personally recommend him for perfect work."
-              />
-              <Reviewreusable
-                img={RazibSir}
-                name="Razibur Rahman"
-                designation="Sr Faculty, Creative IT Institute"
-                comment="He completed the course with great skill and dedication. I personally recommend him for perfect work."
-              />
-            </Slider>
-          </div>
-        </Row> */}
       </Container>
     </section>
   );

@@ -1,42 +1,90 @@
-.service-item{
-    text-align: center;
-    padding: 30px;
-    border: 1px solid skyblue;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-    margin: 20px 0;
+.service-item {
+  height: 100%;
+  margin: 0;
+  padding: 30px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid skyblue;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background 0.3s ease;
 }
-.service-item img{
-    height: 90px;
-    width: 90px;
+
+.service-item:hover {
+  transform: translateY(-6px);
+  background: rgba(135, 206, 235, 0.07);
+  box-shadow: 0 12px 30px rgba(135, 206, 235, 0.2);
 }
+
+/* Optional icon circle (used when you pass the icon prop) */
+.service-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  font-size: 30px;
+  color: #111;
+  background: skyblue;
+  border-radius: 50%;
+}
+
 .service-item h2 {
-    padding: 20px 0 15px 0;
-    font-size: 28px;
-    color: #fff;
-    opacity: 0.9;
+  padding: 20px 0 15px;
+  margin: 0;
+  font-family: Poppins;
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+  opacity: 0.9;
 }
-.service-item p{
-    color: #fff;
-    opacity: 0.8;
-    font-size: 16px;
-    padding-bottom: 8px;
-    line-height: 22px;
+
+.service-item p {
+  margin: 0;
+  padding-bottom: 8px;
+  font-family: Poppins;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  opacity: 0.8;
 }
-.service-item a{
-    font-size: 16px;
-    font-weight: 600;
-    color: #111;
-    background-color: skyblue;
-    text-align: start;
-    padding: 10px 35px;
-    margin-right: 20px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+
+/* Kept from your original in case you re-enable the link/image later */
+.service-item img {
+  height: 90px;
+  width: 90px;
+}
+
+.service-item a {
+  display: inline-block;
+  padding: 10px 35px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #111;
+  background-color: skyblue;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+@media (max-width: 1199px) {
+  .service-item {
+    margin: 0;
+    padding: 22px 18px;
+  }
+
+  .service-icon {
+    width: 54px;
+    height: 54px;
+    font-size: 22px;
+  }
+
+  .service-item h2 {
+    padding: 14px 0 10px;
+    font-size: 20px;
+  }
+
+  .service-item p {
+    font-size: 14px;
+    line-height: 21px;
+  }
 }

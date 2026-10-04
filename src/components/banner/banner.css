@@ -1,99 +1,153 @@
-#banner{
-    padding: 150px 0 150px 0;
-    background: url(../../assets/banner5.png) no-repeat center/cover;
-    margin-bottom: 50px;
+#banner {
+  padding: 150px 0;
+  background: url(../../assets/banner5.png) no-repeat center/cover;
+  margin-bottom: 50px;
 }
-.ban-img{
-    margin-top: 50px;
+
+.ban-img {
+  margin-top: 50px;
 }
+
+/* ---------- Hello badge ---------- */
+.ban-hello {
+  display: inline-block;
+  margin-left: 20px;
+  padding: 6px 16px;
+  font-family: Poppins;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #fff;
+  border: 1px solid rgba(135, 206, 235, 0.6);
+  border-radius: 999px;
+  background: rgba(135, 206, 235, 0.1);
+  backdrop-filter: blur(4px);
+}
+
+/* ---------- Heading ---------- */
 .ban-text h1 {
-    font-family: Poppins;
-    font-size: 50px;
-    font-weight: 700;
-    margin: 18px 0 10px;
-    position: relative;
-    padding-left: 20px;
-    color: #fff;
+  font-family: Poppins;
+  font-size: 50px;
+  font-weight: 700;
+  margin: 18px 0 10px;
+  position: relative;
+  padding-left: 20px;
+  color: #fff;
 }
-.ban-text h1::after{
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    height: 4px;
-    width: 20px;
-    border-radius: 4px;
-    background: rgb(44, 44, 91);
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
+
+.ban-text h1::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 4px;
+  width: 20px;
+  border-radius: 4px;
+  background: rgb(44, 44, 91);
+  transform: translateY(-50%);
 }
-.ban-text p{
-    font-family: Poppins;
-    padding: 20px 55px 20px 20px;
-    font-weight: 400;
-    font-size: 19px;
-    line-height: 32px;
-    color: #fff;
+
+.ban-name {
+  color: skyblue;
 }
-.ban-text button{
-    color: #fff;
-    font-size: 18px;
-    font-family: Poppins;
-    font-weight: 500;
-    padding: 15px 45px;
-    margin-left: 20px;
-    border: 2px solid skyblue;
-    border-radius: 10px;
-    background: linear-gradient(to left, skyblue 50%, #f111 50%);
-    background-size: 200% 100%;
-    transition: 0.6s;
-    -webkit-transition: 0.6s;
-    -moz-transition: 0.6s;
-    -ms-transition: 0.6s;
-    -o-transition: 0.6s;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+
+/* ---------- Paragraph ---------- */
+.ban-text p {
+  font-family: Poppins;
+  padding: 20px 55px 20px 20px;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 32px;
+  color: #fff;
 }
-.ban-text button:hover{
+
+/* ---------- Buttons ---------- */
+.ban-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.ban-text button {
+  color: #fff;
+  font-size: 18px;
+  font-family: Poppins;
+  font-weight: 500;
+  padding: 15px 45px;
+  border: 2px solid skyblue;
+  border-radius: 10px;
+  background: linear-gradient(to left, skyblue 50%, #f111 50%);
+  background-size: 200% 100%;
+  transition: 0.6s;
+}
+
+.ban-text button:hover {
+  background-position: right;
+}
+
+/* Primary: filled by default, lifts on hover */
+.ban-text .btn-primary-custom {
+  background: skyblue;
+  color: #111;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ban-text .btn-primary-custom:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(135, 206, 235, 0.35);
+}
+
+/* Secondary: keeps your original sweep effect */
+.ban-text .btn-outline-custom {
+  background-color: transparent;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1199px) {
+  #banner {
+    padding: 50px 0;
+    margin-bottom: 0;
     background-position: right;
-}
-@media(max-width: 1199px){
-    #banner {
-        padding: 50px 0;
-        margin-bottom: 0px;
-        background-position: right;
-    }
-    .ban-text h1 {
-        font-size: 20px;
-        margin: 0;
-        padding-left: 0px;
-    }
-    .ban-text h1::after {
-        top: -12%;
-        left: -1px;
-        width: 63px;
-    }
-    .index-module_type__E-SaG{
-        font-size: 20px !important;
-        padding-left: 0 !important;
-    }
-    .ban-text p {
-        padding: 25px 0 0 0;
-        font-size: 12px;
-        line-height: 18px;
-    }
-    .ban-text button {
-        font-size: 14px;
-        padding: 10px 28px;
-        margin-left: 0;
-    }
+  }
+
+  .ban-hello {
+    margin-left: 0;
+    margin-bottom: 18px;
+    font-size: 12px;
+  }
+
+  .ban-text h1 {
+    font-size: 20px;
+    margin: 0;
+    padding-left: 0;
+  }
+
+  .ban-text h1::after {
+    top: -12%;
+    left: -1px;
+    width: 63px;
+  }
+
+  .index-module_type__E-SaG {
+    font-size: 20px !important;
+    padding-left: 0 !important;
+  }
+
+  .ban-text p {
+    padding: 25px 0 0 0;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .ban-actions {
+    padding-left: 0;
+    gap: 10px;
+  }
+
+  .ban-text button {
+    font-size: 14px;
+    padding: 10px 28px;
+  }
 }

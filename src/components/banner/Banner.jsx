@@ -9,17 +9,21 @@ const Banner = () => {
         <Row className="justify-content-start">
           <Col lg={6}>
             <div className="ban-text">
-              <h1>I'M Fahim Sarker</h1>
+              <span className="ban-hello">👋 Hello, World!</span>
+              <h1>
+                I'm <span className="ban-name">Fahim Sarker</span>
+              </h1>
+
               <TypeAnimation
                 sequence={[
-                  "I am a Front-End Developer",
-                  1000,
-                  "I am a React Developer",
-                  1000,
-                  "I am a React Native Developer",
-                  1000,
-                  "I am a Next Js Developer",
-                  1000,
+                  "Front-End Developer",
+                  1500,
+                  "React & Next.js Engineer",
+                  1500,
+                  "React Native App Builder",
+                  1500,
+                  "UI Craftsman",
+                  1500,
                 ]}
                 wrapper="span"
                 speed={50}
@@ -28,22 +32,27 @@ const Banner = () => {
                   display: "inline-block",
                   fontWeight: "600",
                   color: "antiquewhite",
-                  paddingLeft: "20px",
                 }}
                 repeat={Infinity}
               />
+
               <p>
-                I'm a professional <b>Front-End Developer</b> with 2 years of
-                experience building fast, responsive web applications. At
-                Softvence Agency, I co-lead the frontend team and turn ideas
-                into clean, user-friendly interfaces with React, Next.js,
-                TypeScript & Tailwind CSS. I also build mobile apps with React
-                Native and I'm currently learning Flutter. Let's build
-                something great together!
+                I turn complex ideas into <b>fast, polished, and intuitive</b>{" "}
+                digital experiences. With 2 years of hands-on experience, I
+                build scalable web apps using <b>React, Next.js, TypeScript</b>{" "}
+                and <b>Tailwind CSS</b>, and bring products to mobile with{" "}
+                <b>React Native</b>. Currently expanding my toolkit with
+                Flutter, because great products deserve to live everywhere.
               </p>
-              <a href="#">
-                <button>MORE ABOUT ME</button>
-              </a>
+
+              <div className="ban-actions">
+                <a href="#contact">
+                  <button className="btn-primary-custom">HIRE ME</button>
+                </a>
+                <a href="#about">
+                  <button className="btn-outline-custom">MORE ABOUT ME</button>
+                </a>
+              </div>
             </div>
           </Col>
         </Row>

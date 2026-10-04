@@ -1,57 +1,140 @@
-import React from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
-import "./contact.css"
-import { FaPaperPlane, FaFacebook, FaTwitter, FaGithub, FaLinkedin, FaComment } from "react-icons/fa";
+import "./contact.css";
+import { useState } from "react";
+import { Col, Container, Row } from "react-bootstrap";
+import { FaPaperPlane, FaGithub, FaLinkedin, FaComment } from "react-icons/fa";
 import { FaPhoneFlip } from "react-icons/fa6";
 
+const EMAIL = "sarkerfahim599@gmail.com";
+
+const contactInfo = [
+    {
+        Icon: FaComment,
+        label: "Mail Me",
+        value: EMAIL,
+        href: `mailto:${EMAIL}`,
+    },
+    {
+        Icon: FaPhoneFlip,
+        label: "Call Me",
+        value: "+880 1647389997",
+        href: "tel:+8801647389997",
+    },
+];
+
+const socials = [
+    {
+        Icon: FaGithub,
+        label: "GitHub",
+        href: "https://github.com/fahim-sarker",
+    },
+    {
+        Icon: FaLinkedin,
+        label: "LinkedIn",
+        href: "https://www.linkedin.com/in/fahim-sarker-089817312/",
+    },
+];
+
 const Contact = () => {
+    const [form, setForm] = useState({ name: "", email: "", message: "" });
+
+    const handleChange = (e) => {
+        setForm({ ...form, [e.target.name]: e.target.value });
+    };
+
+    // Opens the visitor's email app with the message pre-filled.
+    // No backend needed. See the note below if you want direct sending.
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const subject = encodeURIComponent(`Portfolio message from ${form.name}`);
+        const body = encodeURIComponent(
+            `${form.message}\n\nFrom: ${form.name} (${form.email})`
+        );
+        window.location.href = `mailto:${EMAIL}?subject=${subject}&body=${body}`;
+    };
+
     return (
         <section id="contact">
             <Container>
-                <Row className='text-center'>
+                <Row className="text-center">
                     <div className="contact_head">
                         <h2>Contact</h2>
                         <h3>Get In</h3>
                         <h4>Touch</h4>
                     </div>
                 </Row>
+
                 <Row>
                     <Col lg={4}>
-                        <div class="contact-txt">
-                            <h2>DON'T BE SHY!</h2>
-                            <p>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
-                            <div class="mail">
-                                <h5>Mail Me</h5>
-                                <a href="mailto:sarkerfahim599@gmail.com">sarkerfahim599@gmail.com</a>
-                                <FaComment className='mp' />
+                        <div className="contact-txt">
+                            <h2>Don't be shy!</h2>
+                            <p>
+                                Feel free to get in touch with me. I am always open to
+                                discussing new projects, creative ideas or opportunities to be
+                                part of your visions.
+                            </p>
 
-                            </div>
-                            <div class="mob">
-                                <h5>Call Me</h5>
-                                <a href="tel:+880 1647389997">+880 1647389997</a>
-                                <FaPhoneFlip className='mp' />
-                            </div>
-                            <div className="">
-                                <a href="#"><FaTwitter className='icons' /></a>
-                                <a href="https://github.com/fahim-sarker" target='blank'><FaGithub className='icon' /></a>
-                                <a href="https://www.linkedin.com/in/fahim-sarker-089817312/" target='blank'><FaLinkedin className='icons' /></a>
+                            {contactInfo.map(({ Icon, label, value, href }) => (
+                                <div className="contact-info" key={label}>
+                                    <Icon className="contact-icon" />
+                                    <h5>{label}</h5>
+                                    <a href={href}>{value}</a>
+                                </div>
+                            ))}
+
+                            <div className="social-links">
+                                {socials.map(({ Icon, label, href }) => (
+                                    <a
+                                        key={label}
+                                        href={href}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        aria-label={label}
+                                    >
+                                        <Icon />
+                                    </a>
+                                ))}
                             </div>
                         </div>
                     </Col>
+
                     <Col lg={8}>
                         <div className="contact-item">
-                            <form action="">
-                                <input type="text" placeholder="Your name" />
-                                <input type="email" placeholder="Your email" /> <br />
-                                <textarea name="" id="" placeholder='Your message'></textarea>
-                                <button type="submit">Send Message <FaPaperPlane className='abc' /></button>
+                            <form onSubmit={handleSubmit}>
+                                <div className="form-row">
+                                    <input
+                                        type="text"
+                                        name="name"
+                                        placeholder="Your name"
+                                        value={form.name}
+                                        onChange={handleChange}
+                                        required
+                                    />
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        placeholder="Your email"
+                                        value={form.email}
+                                        onChange={handleChange}
+                                        required
+                                    />
+                                </div>
+                                <textarea
+                                    name="message"
+                                    placeholder="Your message"
+                                    value={form.message}
+                                    onChange={handleChange}
+                                    required
+                                ></textarea>
+                                <button type="submit">
+                                    Send Message <FaPaperPlane />
+                                </button>
                             </form>
                         </div>
                     </Col>
                 </Row>
             </Container>
         </section>
-    )
-}
+    );
+};
 
-export default Contact
+export default Contact;
