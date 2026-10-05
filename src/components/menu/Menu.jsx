@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import "./menu.css"
 import { Container, Navbar, Nav } from 'react-bootstrap'
 import { IoIosHome, IoIosContact } from "react-icons/io";
