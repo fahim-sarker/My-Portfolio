@@ -44,7 +44,7 @@ const Menu = () => {
                                 <li> <a href="#contact" > <i><TbMailOpenedFilled /></i> <span>Contact</span></a> </li>
                             </ul>
 
-                            <div class="social">
+                            <div className="social">
                                 <a href="https://www.facebook.com/sahed.rahman.bdarmy.21" target='blank'><FaFacebook className='icons' /></a>
                                 <a href="#"><FaTwitter className='icons' /></a>
                                 <a href="https://github.com/SIRsahed" target='blank'><FaGithub className='icons' /></a>
@@ -53,7 +53,7 @@ const Menu = () => {
                             <div className="cv">
                                 <a href=''>
                                     <button>
-                                        Download Resume <i class="fa-solid fa-cloud-arrow-down"></i>
+                                        Download Resume <i className="fa-solid fa-cloud-arrow-down"></i>
                                     </button>
                                 </a>
                             </div>

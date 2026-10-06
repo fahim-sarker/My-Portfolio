@@ -66,7 +66,7 @@ const Contact = () => {
                 <Row>
                     <Col lg={4}>
                         <div className="contact-txt">
-                            <h2>Don't be shy!</h2>
+                            <h2>Dont be shy!</h2>
                             <p>
                                 Feel free to get in touch with me. I am always open to
                                 discussing new projects, creative ideas or opportunities to be
